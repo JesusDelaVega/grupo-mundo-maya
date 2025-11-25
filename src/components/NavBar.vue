@@ -91,53 +91,81 @@ const closeMenu = () => {
         </router-link>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex items-center space-x-1">
-          <template v-for="item in navItems" :key="item.name">
-            <!-- Dropdown Item -->
-            <div v-if="item.dropdown" class="relative" @mouseenter="isDropdownOpen = true" @mouseleave="isDropdownOpen = false">
-              <button :class="['px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 flex items-center gap-1',
-                isScrolled ? 'text-gray-600 hover:text-sky-600 hover:bg-sky-50' : 'text-white/90 hover:text-white hover:bg-white/10']">
-                {{ item.name }}
-                <svg :class="['w-4 h-4 transition-transform duration-200', isDropdownOpen ? 'rotate-180' : '']" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <!-- Dropdown Menu con animación -->
-              <Transition
-                enter-active-class="transition duration-200 ease-out"
-                enter-from-class="opacity-0 translate-y-2"
-                enter-to-class="opacity-100 translate-y-0"
-                leave-active-class="transition duration-150 ease-in"
-                leave-from-class="opacity-100 translate-y-0"
-                leave-to-class="opacity-0 translate-y-2"
-              >
-                <div v-show="isDropdownOpen" class="absolute top-full left-0 mt-2 w-60 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-50 overflow-hidden">
-                  <router-link
-                    v-for="subItem in item.items"
-                    :key="subItem.name"
-                    :to="subItem.path"
-                    class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-all duration-200 group"
-                  >
-                    <svg class="w-4 h-4 text-sky-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                    <span>{{ subItem.name }}</span>
-                  </router-link>
-                </div>
-              </Transition>
-            </div>
-            <!-- Regular Item -->
-            <router-link v-else-if="item.path" :to="item.path"
-              :class="['px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative group',
-                isScrolled ? 'text-gray-600 hover:text-sky-600' : 'text-white/90 hover:text-white']">
-              {{ item.name }}
-              <span :class="['absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-current transition-all duration-300 w-0 group-hover:w-3/4', isScrolled ? 'bg-sky-600' : 'bg-white']"></span>
-            </router-link>
-          </template>
+        <nav class="hidden lg:flex items-center">
+          <!-- Nav Items Container -->
+          <div :class="['flex items-center rounded-full px-2 py-1 transition-all duration-300',
+            isScrolled ? 'bg-gray-100/80' : 'bg-white/10 backdrop-blur-sm']">
+            <template v-for="item in navItems" :key="item.name">
+              <!-- Dropdown Item -->
+              <div v-if="item.dropdown" class="relative" @mouseenter="isDropdownOpen = true" @mouseleave="isDropdownOpen = false">
+                <button :class="['px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-1.5',
+                  isScrolled
+                    ? 'text-gray-600 hover:text-sky-600 hover:bg-white'
+                    : 'text-white/90 hover:text-white hover:bg-white/20',
+                  isDropdownOpen && (isScrolled ? 'bg-white text-sky-600 shadow-sm' : 'bg-white/20 text-white')]">
+                  {{ item.name }}
+                  <svg :class="['w-4 h-4 transition-transform duration-300', isDropdownOpen ? 'rotate-180' : '']" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <!-- Dropdown Menu mejorado -->
+                <Transition
+                  enter-active-class="transition duration-300 ease-out"
+                  enter-from-class="opacity-0 scale-95 -translate-y-2"
+                  enter-to-class="opacity-100 scale-100 translate-y-0"
+                  leave-active-class="transition duration-200 ease-in"
+                  leave-from-class="opacity-100 scale-100 translate-y-0"
+                  leave-to-class="opacity-0 scale-95 -translate-y-2"
+                >
+                  <div v-show="isDropdownOpen" class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-3 z-50 overflow-hidden">
+                    <!-- Flecha del dropdown -->
+                    <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-gray-100 rotate-45"></div>
+                    <div class="relative">
+                      <router-link
+                        v-for="subItem in item.items"
+                        :key="subItem.name"
+                        :to="subItem.path"
+                        class="flex items-center gap-3 px-5 py-3 text-sm text-gray-600 hover:bg-gradient-to-r hover:from-sky-50 hover:to-transparent hover:text-sky-600 transition-all duration-200 group relative"
+                      >
+                        <div class="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center group-hover:bg-sky-500 group-hover:scale-110 transition-all duration-300">
+                          <svg class="w-4 h-4 text-sky-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                          </svg>
+                        </div>
+                        <span class="font-medium">{{ subItem.name }}</span>
+                        <svg class="w-4 h-4 ml-auto opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                      </router-link>
+                    </div>
+                  </div>
+                </Transition>
+              </div>
+              <!-- Regular Item con indicador activo -->
+              <router-link v-else-if="item.path" :to="item.path"
+                :class="['px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative overflow-hidden group',
+                  isScrolled ? 'text-gray-600 hover:text-sky-600 hover:bg-white hover:shadow-sm' : 'text-white/90 hover:text-white hover:bg-white/20']">
+                <span class="relative z-10">{{ item.name }}</span>
+                <!-- Efecto de brillo en hover -->
+                <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+              </router-link>
+            </template>
+          </div>
+
+          <!-- Botón Contacto mejorado -->
           <router-link to="/contacto"
-            :class="['ml-3 px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg',
-              isScrolled ? 'bg-sky-600 text-white hover:bg-sky-700 shadow-sky-600/30' : 'bg-amber-500 text-white hover:bg-amber-600 shadow-amber-500/30']">
-            Contacto
+            :class="['ml-4 px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 relative overflow-hidden group',
+              isScrolled
+                ? 'bg-gradient-to-r from-sky-600 to-sky-700 text-white hover:from-sky-700 hover:to-sky-800 shadow-lg shadow-sky-600/25 hover:shadow-xl hover:shadow-sky-600/30'
+                : 'bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700 shadow-lg shadow-amber-500/25 hover:shadow-xl hover:shadow-amber-500/30']">
+            <span class="relative z-10 flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Contacto
+            </span>
+            <!-- Efecto shine -->
+            <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
           </router-link>
         </nav>
 

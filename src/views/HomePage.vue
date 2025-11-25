@@ -1,19 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
-import { CountUp } from 'countup.js'
 
-const heroRef = ref<HTMLElement | null>(null)
 const logoRef = ref<HTMLElement | null>(null)
 const sloganRef = ref<HTMLElement | null>(null)
 const textRef = ref<HTMLElement | null>(null)
 const buttonsRef = ref<HTMLElement | null>(null)
-const statsRef = ref<HTMLElement | null>(null)
-
-const stat1 = ref<HTMLElement | null>(null)
-const stat2 = ref<HTMLElement | null>(null)
-const stat3 = ref<HTMLElement | null>(null)
-const stat4 = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   // Timeline de animación del hero
@@ -40,25 +32,6 @@ onMounted(() => {
     y: 20,
     duration: 0.6
   }, '-=0.4')
-  .from(statsRef.value?.children || [], {
-    opacity: 0,
-    y: 40,
-    scale: 0.9,
-    stagger: 0.15,
-    duration: 0.6
-  }, '-=0.3')
-
-  // CountUp para estadísticas
-  const countOptions = {
-    duration: 2.5,
-    useEasing: true,
-    useGrouping: true
-  }
-
-  if (stat1.value) new CountUp(stat1.value, 12, countOptions).start()
-  if (stat2.value) new CountUp(stat2.value, 6, countOptions).start()
-  if (stat3.value) new CountUp(stat3.value, 11, countOptions).start()
-  if (stat4.value) new CountUp(stat4.value, 4, countOptions).start()
 
   // Animación parallax suave en elementos decorativos
   gsap.to('.parallax-blob-1', {
@@ -88,60 +61,26 @@ onMounted(() => {
       <div class="parallax-blob-2 absolute bottom-20 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <!-- Logo SEDENA blanco -->
-            <div ref="logoRef" class="flex items-center gap-3 mb-4">
-              <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-10" style="filter: brightness(0) invert(1);" />
-            </div>
-            <!-- Slogan Mundo Maya - MÁS GRANDE -->
-            <div ref="sloganRef" class="mb-8">
-              <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-40 md:h-52 lg:h-60" />
-            </div>
-            <p ref="textRef" class="text-xl text-sky-100 mb-8 leading-relaxed max-w-xl">
-              Administramos y operamos infraestructura estratégica nacional: aeropuertos, hoteles y servicios de combustible para el desarrollo de México.
-            </p>
-            <div ref="buttonsRef" class="flex flex-wrap gap-4">
-              <router-link to="/servicios" class="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold transition-all hover:-translate-y-1 hover:shadow-xl shadow-amber-500/30 flex items-center gap-2">
-                Explorar Servicios
-                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </router-link>
-              <router-link to="/nosotros" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-xl font-semibold transition-all backdrop-blur hover:border-white/50">
-                Conocer Más
-              </router-link>
-            </div>
+        <div class="max-w-3xl mx-auto text-center">
+          <!-- Logo SEDENA blanco -->
+          <div ref="logoRef" class="flex items-center justify-center gap-3 mb-4">
+            <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-10" style="filter: brightness(0) invert(1);" />
           </div>
-
-          <!-- Stats Grid - Números más pequeños -->
-          <div ref="statsRef" class="grid grid-cols-2 gap-3">
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
-              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center mb-3">
-                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-              </div>
-              <div ref="stat1" class="text-2xl font-bold text-white mb-0.5">0</div>
-              <div class="text-sky-200 text-xs">Aeropuertos</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 mt-6 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
-              <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center mb-3">
-                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-              </div>
-              <div ref="stat2" class="text-2xl font-bold text-white mb-0.5">0</div>
-              <div class="text-sky-200 text-xs">Hoteles</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
-              <div class="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-3">
-                <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-              <div ref="stat3" class="text-2xl font-bold text-white mb-0.5">0</div>
-              <div class="text-sky-200 text-xs">Combustibles</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 mt-6 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
-              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
-                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-              </div>
-              <div ref="stat4" class="text-2xl font-bold text-white mb-0.5">0</div>
-              <div class="text-sky-200 text-xs">Parques</div>
-            </div>
+          <!-- Slogan Mundo Maya - MÁS GRANDE -->
+          <div ref="sloganRef" class="mb-8 flex justify-center">
+            <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-40 md:h-52 lg:h-60" />
+          </div>
+          <p ref="textRef" class="text-xl text-sky-100 mb-8 leading-relaxed">
+            Administramos y operamos infraestructura estratégica nacional: aeropuertos, hoteles y servicios de combustible para el desarrollo de México.
+          </p>
+          <div ref="buttonsRef" class="flex flex-wrap gap-4 justify-center">
+            <router-link to="/servicios" class="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold transition-all hover:-translate-y-1 hover:shadow-xl shadow-amber-500/30 flex items-center gap-2">
+              Explorar Servicios
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </router-link>
+            <router-link to="/nosotros" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-xl font-semibold transition-all backdrop-blur hover:border-white/50">
+              Conocer Más
+            </router-link>
           </div>
         </div>
       </div>
