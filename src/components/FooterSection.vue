@@ -1,158 +1,65 @@
-<script setup lang="ts">
-const currentYear = new Date().getFullYear()
-
-const quickLinks = [
-  { label: 'Inicio', route: '/' },
-  { label: 'Nosotros', route: '/nosotros' },
-  { label: 'Servicios', route: '/servicios' },
-  { label: 'Noticias', route: '/noticias' },
-  { label: 'Contacto', route: '/contacto' },
-]
-
-const services = [
-  { label: 'Servicios Turísticos', route: '/servicios#turismo' },
-  { label: 'Aeropuertos', route: '/servicios#aeropuertos' },
-  { label: 'Combustibles', route: '/servicios#combustibles' },
-]
-
-const legal = [
-  { label: 'Transparencia', route: '/transparencia' },
-  { label: 'Aviso de Privacidad', route: '/transparencia#privacidad' },
-  { label: 'Normateca', route: '/transparencia#normateca' },
-]
-
-const socialLinks = [
-  { icon: 'pi pi-facebook', url: '#', label: 'Facebook' },
-  { icon: 'pi pi-twitter', url: '#', label: 'Twitter' },
-  { icon: 'pi pi-instagram', url: '#', label: 'Instagram' },
-  { icon: 'pi pi-youtube', url: '#', label: 'YouTube' },
-]
-</script>
-
 <template>
-  <footer class="bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 text-white">
-    <!-- Main Footer -->
-    <div class="container mx-auto px-6 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <!-- Brand Column -->
-        <div class="lg:col-span-1">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center">
-              <i class="pi pi-globe text-2xl text-amber-400"></i>
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-sky-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
             </div>
             <div>
-              <h3 class="font-bold text-lg">Grupo Mundo Maya</h3>
-              <p class="text-sky-300 text-sm">Unimos el cielo y la tierra</p>
+              <div class="font-bold">Grupo Mundo Maya</div>
+              <div class="text-xs text-gray-400">Unimos el cielo y la tierra</div>
             </div>
           </div>
-          <p class="text-sky-200/80 text-sm leading-relaxed mb-6">
-            Entidad paraestatal dedicada a administrar, controlar y operar bienes nacionales para contribuir al bienestar social y desarrollo económico de México.
-          </p>
-          <!-- Social Links -->
-          <div class="flex gap-3">
-            <a
-              v-for="social in socialLinks"
-              :key="social.label"
-              :href="social.url"
-              :aria-label="social.label"
-              class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-amber-500 transition-all duration-300 hover:scale-110"
-            >
-              <i :class="[social.icon, 'text-lg']"></i>
-            </a>
-          </div>
+          <p class="text-gray-400 text-sm">Entidad paraestatal dedicada al desarrollo nacional mediante infraestructura estratégica.</p>
         </div>
 
-        <!-- Quick Links -->
+        <!-- Enlaces -->
         <div>
-          <h4 class="font-semibold text-lg mb-6 flex items-center gap-2">
-            <span class="w-8 h-0.5 bg-amber-400 rounded-full"></span>
-            Enlaces Rápidos
-          </h4>
-          <ul class="space-y-3">
-            <li v-for="link in quickLinks" :key="link.route">
-              <router-link
-                :to="link.route"
-                class="text-sky-200/80 hover:text-amber-400 transition-colors duration-200 flex items-center gap-2 group"
-              >
-                <i class="pi pi-chevron-right text-xs text-amber-400/50 group-hover:text-amber-400 transition-colors"></i>
-                {{ link.label }}
-              </router-link>
-            </li>
+          <h4 class="font-semibold mb-4">Enlaces</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><router-link to="/" class="hover:text-white transition-colors">Inicio</router-link></li>
+            <li><router-link to="/nosotros" class="hover:text-white transition-colors">Nosotros</router-link></li>
+            <li><router-link to="/servicios" class="hover:text-white transition-colors">Servicios</router-link></li>
+            <li><router-link to="/noticias" class="hover:text-white transition-colors">Noticias</router-link></li>
           </ul>
         </div>
 
-        <!-- Services -->
+        <!-- Servicios -->
         <div>
-          <h4 class="font-semibold text-lg mb-6 flex items-center gap-2">
-            <span class="w-8 h-0.5 bg-amber-400 rounded-full"></span>
-            Nuestros Servicios
-          </h4>
-          <ul class="space-y-3">
-            <li v-for="service in services" :key="service.route">
-              <router-link
-                :to="service.route"
-                class="text-sky-200/80 hover:text-amber-400 transition-colors duration-200 flex items-center gap-2 group"
-              >
-                <i class="pi pi-chevron-right text-xs text-amber-400/50 group-hover:text-amber-400 transition-colors"></i>
-                {{ service.label }}
-              </router-link>
-            </li>
+          <h4 class="font-semibold mb-4">Servicios</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><router-link to="/servicios" class="hover:text-white transition-colors">Turismo</router-link></li>
+            <li><router-link to="/servicios" class="hover:text-white transition-colors">Aeropuertos</router-link></li>
+            <li><router-link to="/servicios" class="hover:text-white transition-colors">Combustibles</router-link></li>
+            <li><router-link to="/transparencia" class="hover:text-white transition-colors">Transparencia</router-link></li>
           </ul>
         </div>
 
-        <!-- Contact & Legal -->
+        <!-- Contacto -->
         <div>
-          <h4 class="font-semibold text-lg mb-6 flex items-center gap-2">
-            <span class="w-8 h-0.5 bg-amber-400 rounded-full"></span>
-            Contacto
-          </h4>
-          <div class="space-y-4 mb-8">
-            <a href="tel:+525555555555" class="flex items-center gap-3 text-sky-200/80 hover:text-amber-400 transition-colors">
-              <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center">
-                <i class="pi pi-phone text-amber-400"></i>
-              </div>
-              <span>+52 55 5555 5555</span>
-            </a>
-            <a href="mailto:contacto@grupomundomaya.com" class="flex items-center gap-3 text-sky-200/80 hover:text-amber-400 transition-colors">
-              <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center">
-                <i class="pi pi-envelope text-amber-400"></i>
-              </div>
-              <span>contacto@grupomundomaya.com</span>
-            </a>
-            <div class="flex items-start gap-3 text-sky-200/80">
-              <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0">
-                <i class="pi pi-map-marker text-amber-400"></i>
-              </div>
-              <span>Ciudad de México, México</span>
-            </div>
-          </div>
-
-          <h4 class="font-semibold text-sm mb-3 text-sky-300">Legal</h4>
-          <ul class="space-y-2">
-            <li v-for="item in legal" :key="item.route">
-              <router-link
-                :to="item.route"
-                class="text-sky-200/60 text-sm hover:text-amber-400 transition-colors duration-200"
-              >
-                {{ item.label }}
-              </router-link>
+          <h4 class="font-semibold mb-4">Contacto</h4>
+          <ul class="space-y-3 text-gray-400 text-sm">
+            <li class="flex items-center space-x-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <span>+55 5966 890113</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Carretera Federal México-Pachuca, Santa Lucía, Edo. de Méx.</span>
             </li>
           </ul>
         </div>
       </div>
-    </div>
 
-    <!-- Bottom Bar -->
-    <div class="border-t border-white/10">
-      <div class="container mx-auto px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-sky-200/60 text-sm text-center md:text-left">
-            &copy; {{ currentYear }} Grupo Mundo Maya. Todos los derechos reservados.
-          </p>
-          <p class="text-sky-200/40 text-xs text-center md:text-right">
-            Gobierno de México
-          </p>
-        </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <p>&copy; {{ new Date().getFullYear() }} Grupo Mundo Maya. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0">Gobierno de México</p>
       </div>
     </div>
   </footer>

@@ -19,149 +19,103 @@ const subjects = [
   'Otro'
 ]
 
-const contactInfo = [
-  {
-    icon: 'pi pi-phone',
-    title: 'Teléfono',
-    value: '+52 55 5555 5555',
-    link: 'tel:+525555555555',
-    color: 'sky'
-  },
-  {
-    icon: 'pi pi-envelope',
-    title: 'Correo Electrónico',
-    value: 'contacto@grupomundomaya.com',
-    link: 'mailto:contacto@grupomundomaya.com',
-    color: 'amber'
-  },
-  {
-    icon: 'pi pi-map-marker',
-    title: 'Dirección',
-    value: 'Ciudad de México, México',
-    link: '#',
-    color: 'emerald'
-  },
-  {
-    icon: 'pi pi-clock',
-    title: 'Horario de Atención',
-    value: 'Lunes a Viernes: 9:00 - 18:00',
-    link: null,
-    color: 'purple'
-  }
-]
-
 const handleSubmit = () => {
   console.log('Form submitted:', form.value)
-  // Handle form submission
 }
 </script>
 
 <template>
-  <div>
+  <div class="pt-20">
     <!-- Hero -->
-    <section class="relative pt-32 pb-20 bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 overflow-hidden">
-      <div class="absolute inset-0 maya-pattern opacity-20"></div>
-
-      <div class="relative container mx-auto px-6">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm text-sky-200 rounded-full text-sm font-medium mb-6">
-            <i class="pi pi-envelope"></i>
-            Contacto
-          </div>
-          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Contáctanos
-          </h1>
-          <p class="text-xl text-sky-100/80 leading-relaxed">
-            Estamos aquí para ayudarte. Envíanos un mensaje y nuestro equipo te responderá a la brevedad.
-          </p>
-        </div>
+    <section class="bg-gradient-to-br from-sky-900 to-slate-900 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="inline-block px-4 py-2 bg-white/10 text-sky-200 rounded-full text-sm font-medium mb-4">Contacto</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contáctanos</h1>
+        <p class="text-xl text-sky-100 max-w-3xl">Estamos aquí para ayudarte. Envíanos un mensaje y nuestro equipo te responderá a la brevedad.</p>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section bg-slate-50">
-      <div class="container mx-auto px-6">
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-3 gap-12">
           <!-- Contact Info -->
           <div class="lg:col-span-1">
-            <h2 class="text-2xl font-bold text-slate-800 mb-6">Información de Contacto</h2>
-            <p class="text-slate-600 mb-8">
-              Puedes comunicarte con nosotros a través de los siguientes medios o completando el formulario.
-            </p>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h2>
+            <p class="text-gray-600 mb-8">Puedes comunicarte con nosotros a través de los siguientes medios.</p>
 
             <div class="space-y-4">
-              <a
-                v-for="info in contactInfo"
-                :key="info.title"
-                :href="info.link || '#'"
-                :class="[
-                  'flex items-start gap-4 p-4 bg-white rounded-xl transition-all duration-300',
-                  info.link ? 'hover:shadow-card cursor-pointer' : 'cursor-default'
-                ]"
-              >
-                <div
-                  :class="[
-                    'w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0',
-                    info.color === 'sky' ? 'bg-sky-100 text-sky-600' : '',
-                    info.color === 'amber' ? 'bg-amber-100 text-amber-600' : '',
-                    info.color === 'emerald' ? 'bg-emerald-100 text-emerald-600' : '',
-                    info.color === 'purple' ? 'bg-purple-100 text-purple-600' : ''
-                  ]"
-                >
-                  <i :class="[info.icon, 'text-xl']"></i>
+              <!-- Phone -->
+              <a href="tel:+555966890113" class="flex items-start gap-4 p-4 bg-white rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-slate-800">{{ info.title }}</h3>
-                  <p class="text-slate-600 text-sm mt-1">{{ info.value }}</p>
+                  <h3 class="font-semibold text-gray-900">Teléfono</h3>
+                  <p class="text-gray-600 text-sm mt-1">+55 5966 890113</p>
                 </div>
               </a>
-            </div>
 
-            <!-- Social Links -->
-            <div class="mt-8 pt-8 border-t border-slate-200">
-              <h3 class="font-semibold text-slate-800 mb-4">Síguenos</h3>
-              <div class="flex gap-3">
-                <a
-                  v-for="social in ['facebook', 'twitter', 'instagram', 'youtube']"
-                  :key="social"
-                  href="#"
-                  class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-slate-600 hover:bg-sky-600 hover:text-white transition-all duration-300"
-                >
-                  <i :class="['pi', `pi-${social}`]"></i>
-                </a>
+              <!-- Email -->
+              <a href="mailto:contacto@grupomundomaya.com" class="flex items-start gap-4 p-4 bg-white rounded-xl hover:shadow-lg transition-shadow">
+                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Correo Electrónico</h3>
+                  <p class="text-gray-600 text-sm mt-1">contacto@grupomundomaya.com</p>
+                </div>
+              </a>
+
+              <!-- Address -->
+              <div class="flex items-start gap-4 p-4 bg-white rounded-xl">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Dirección</h3>
+                  <p class="text-gray-600 text-sm mt-1">Carretera Federal México-Pachuca, Santa Lucía, Edo. de Méx.</p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="flex items-start gap-4 p-4 bg-white rounded-xl">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900">Horario de Atención</h3>
+                  <p class="text-gray-600 text-sm mt-1">Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Contact Form -->
           <div class="lg:col-span-2">
-            <div class="bg-white p-8 rounded-2xl shadow-card">
-              <h2 class="text-2xl font-bold text-slate-800 mb-2">Envíanos un mensaje</h2>
-              <p class="text-slate-600 mb-8">Completa el formulario y te responderemos a la brevedad.</p>
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Envíanos un mensaje</h2>
+              <p class="text-gray-600 mb-8">Completa el formulario y te responderemos a la brevedad.</p>
 
               <form @submit.prevent="handleSubmit" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">
-                      Nombre completo *
-                    </label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Nombre completo *</label>
                     <input
                       v-model="form.name"
                       type="text"
                       required
-                      class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                       placeholder="Tu nombre"
                     />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">
-                      Correo electrónico *
-                    </label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Correo electrónico *</label>
                     <input
                       v-model="form.email"
                       type="email"
                       required
-                      class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -169,42 +123,34 @@ const handleSubmit = () => {
 
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">
-                      Teléfono
-                    </label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
                     <input
                       v-model="form.phone"
                       type="tel"
-                      class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
                       placeholder="+52 55 1234 5678"
                     />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-2">
-                      Asunto *
-                    </label>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Asunto *</label>
                     <select
                       v-model="form.subject"
                       required
-                      class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200 bg-white"
+                      class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent bg-white"
                     >
                       <option value="">Selecciona un asunto</option>
-                      <option v-for="subject in subjects" :key="subject" :value="subject">
-                        {{ subject }}
-                      </option>
+                      <option v-for="subject in subjects" :key="subject" :value="subject">{{ subject }}</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
-                  <label class="block text-sm font-medium text-slate-700 mb-2">
-                    Mensaje *
-                  </label>
+                  <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje *</label>
                   <textarea
                     v-model="form.message"
                     required
                     rows="5"
-                    class="w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-200 resize-none"
+                    class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent resize-none"
                     placeholder="Escribe tu mensaje aquí..."
                   ></textarea>
                 </div>
@@ -212,12 +158,12 @@ const handleSubmit = () => {
                 <div class="flex items-center gap-4">
                   <button
                     type="submit"
-                    class="px-8 py-4 bg-gradient-to-r from-sky-600 to-sky-500 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-sky-500/30 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2"
+                    class="px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white rounded-xl font-semibold transition-all hover:-translate-y-1 hover:shadow-lg flex items-center gap-2"
                   >
-                    <i class="pi pi-send"></i>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                     Enviar Mensaje
                   </button>
-                  <span class="text-slate-400 text-sm">* Campos requeridos</span>
+                  <span class="text-gray-400 text-sm">* Campos requeridos</span>
                 </div>
               </form>
             </div>
@@ -226,15 +172,15 @@ const handleSubmit = () => {
       </div>
     </section>
 
-    <!-- Map Section (Placeholder) -->
-    <section class="h-96 bg-slate-200 relative">
+    <!-- Map Placeholder -->
+    <section class="h-96 bg-gray-200 relative">
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="text-center">
           <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <i class="pi pi-map-marker text-2xl"></i>
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <p class="text-slate-600">Mapa de ubicación</p>
-          <p class="text-slate-400 text-sm">Ciudad de México, México</p>
+          <p class="text-gray-600">Mapa de ubicación</p>
+          <p class="text-gray-400 text-sm">Carretera Federal México-Pachuca, Santa Lucía</p>
         </div>
       </div>
     </section>
