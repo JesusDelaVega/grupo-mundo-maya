@@ -45,16 +45,19 @@ const navItems: NavItem[] = [
 
         <!-- Logo -->
         <router-link to="/" class="flex items-center space-x-3">
-          <div :class="['w-10 h-10 rounded-lg flex items-center justify-center', isScrolled ? 'bg-sky-600' : 'bg-white/20']">
-            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
-          </div>
-          <div class="hidden sm:block">
-            <div :class="['font-bold text-lg', isScrolled ? 'text-gray-900' : 'text-white']">Grupo Mundo Maya</div>
-            <div :class="['text-xs', isScrolled ? 'text-sky-600' : 'text-sky-200']">Unimos el cielo y la tierra</div>
-          </div>
+          <!-- Logo que cambia según scroll -->
+          <img
+            v-if="isScrolled"
+            src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png"
+            alt="Grupo Mundo Maya"
+            class="h-10 object-contain"
+          />
+          <img
+            v-else
+            src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png"
+            alt="Unimos el cielo y la tierra"
+            class="h-10 object-contain"
+          />
         </router-link>
 
         <!-- Desktop Nav -->
