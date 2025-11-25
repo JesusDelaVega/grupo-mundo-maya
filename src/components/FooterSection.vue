@@ -1,5 +1,7 @@
 <template>
   <footer class="bg-gray-900 text-white">
+    <!-- Greca decorativa -->
+    <div class="h-8 bg-repeat-x" style="background-image: url('https://grupomundomaya.com/assets/img/Iconosvg/GRECA SVG.svg'); background-size: auto 100%;"></div>
     <!-- Links externos -->
     <div class="bg-gray-800 py-4">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

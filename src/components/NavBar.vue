@@ -29,7 +29,8 @@ const navItems: NavItem[] = [
     items: [
       { name: 'Normateca', path: '/normateca' },
       { name: 'Información Pública', path: '/informacion-publica' },
-      { name: 'Oferta Laboral', path: '/oferta-laboral' }
+      { name: 'Oferta Laboral', path: '/oferta-laboral' },
+      { name: 'Estados Financieros', path: '/estados-financieros' }
     ]
   },
   { name: 'Transparencia', path: '/transparencia' },

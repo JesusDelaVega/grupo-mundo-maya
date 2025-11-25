@@ -29,9 +29,14 @@ const handleSubmit = () => {
     <!-- Hero -->
     <section class="bg-gradient-to-br from-sky-900 to-slate-900 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <span class="inline-block px-4 py-2 bg-white/10 text-sky-200 rounded-full text-sm font-medium mb-4">Contacto</span>
+        <div class="flex items-center gap-4 mb-6">
+          <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="SEDENA GAFSACOMM" class="h-12" />
+        </div>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contáctanos</h1>
         <p class="text-xl text-sky-100 max-w-3xl">Estamos aquí para ayudarte. Envíanos un mensaje y nuestro equipo te responderá a la brevedad.</p>
+        <div class="mt-6">
+          <img src="https://grupomundomaya.com/assets/img/CONTACTO gris mas chicos 1.png" alt="Contacto" class="h-16" />
+        </div>
       </div>
     </section>
 
