@@ -1,63 +1,146 @@
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import { gsap } from 'gsap'
+import { CountUp } from 'countup.js'
+
+const heroRef = ref<HTMLElement | null>(null)
+const logoRef = ref<HTMLElement | null>(null)
+const sloganRef = ref<HTMLElement | null>(null)
+const textRef = ref<HTMLElement | null>(null)
+const buttonsRef = ref<HTMLElement | null>(null)
+const statsRef = ref<HTMLElement | null>(null)
+
+const stat1 = ref<HTMLElement | null>(null)
+const stat2 = ref<HTMLElement | null>(null)
+const stat3 = ref<HTMLElement | null>(null)
+const stat4 = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  // Timeline de animación del hero
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+
+  tl.from(logoRef.value, {
+    opacity: 0,
+    y: -30,
+    duration: 0.8
+  })
+  .from(sloganRef.value, {
+    opacity: 0,
+    y: 30,
+    scale: 0.9,
+    duration: 1
+  }, '-=0.4')
+  .from(textRef.value, {
+    opacity: 0,
+    y: 20,
+    duration: 0.8
+  }, '-=0.5')
+  .from(buttonsRef.value, {
+    opacity: 0,
+    y: 20,
+    duration: 0.6
+  }, '-=0.4')
+  .from(statsRef.value?.children || [], {
+    opacity: 0,
+    y: 40,
+    scale: 0.9,
+    stagger: 0.15,
+    duration: 0.6
+  }, '-=0.3')
+
+  // CountUp para estadísticas
+  const countOptions = {
+    duration: 2.5,
+    useEasing: true,
+    useGrouping: true
+  }
+
+  if (stat1.value) new CountUp(stat1.value, 12, countOptions).start()
+  if (stat2.value) new CountUp(stat2.value, 6, countOptions).start()
+  if (stat3.value) new CountUp(stat3.value, 11, countOptions).start()
+  if (stat4.value) new CountUp(stat4.value, 4, countOptions).start()
+
+  // Animación parallax suave en elementos decorativos
+  gsap.to('.parallax-blob-1', {
+    y: -50,
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut'
+  })
+  gsap.to('.parallax-blob-2', {
+    y: 50,
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut'
+  })
+})
+</script>
+
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 overflow-hidden">
+    <section ref="heroRef" class="relative min-h-screen flex items-center bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 overflow-hidden">
       <div class="absolute inset-0 bg-black/30"></div>
-      <!-- Decorative elements -->
-      <div class="absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-20 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
+      <!-- Decorative elements con parallax -->
+      <div class="parallax-blob-1 absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
+      <div class="parallax-blob-2 absolute bottom-20 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div class="flex items-center gap-3 mb-6">
-              <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-14" />
+            <!-- Logo SEDENA blanco -->
+            <div ref="logoRef" class="flex items-center gap-3 mb-4">
+              <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-10" style="filter: brightness(0) invert(1);" />
             </div>
-            <div class="mb-6">
-              <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-32 md:h-40" />
+            <!-- Slogan Mundo Maya - MÁS GRANDE -->
+            <div ref="sloganRef" class="mb-8">
+              <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-40 md:h-52 lg:h-60" />
             </div>
-            <p class="text-xl text-sky-100 mb-8 leading-relaxed max-w-xl">
+            <p ref="textRef" class="text-xl text-sky-100 mb-8 leading-relaxed max-w-xl">
               Administramos y operamos infraestructura estratégica nacional: aeropuertos, hoteles y servicios de combustible para el desarrollo de México.
             </p>
-            <div class="flex flex-wrap gap-4">
-              <router-link to="/servicios" class="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold transition-all hover:-translate-y-1 hover:shadow-xl shadow-amber-500/30">
+            <div ref="buttonsRef" class="flex flex-wrap gap-4">
+              <router-link to="/servicios" class="group px-8 py-4 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-semibold transition-all hover:-translate-y-1 hover:shadow-xl shadow-amber-500/30 flex items-center gap-2">
                 Explorar Servicios
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </router-link>
-              <router-link to="/nosotros" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-xl font-semibold transition-all backdrop-blur">
+              <router-link to="/nosotros" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-xl font-semibold transition-all backdrop-blur hover:border-white/50">
                 Conocer Más
               </router-link>
             </div>
           </div>
 
-          <!-- Stats Grid -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition-all">
-              <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <!-- Stats Grid - Números más pequeños -->
+          <div ref="statsRef" class="grid grid-cols-2 gap-3">
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
+              <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
               </div>
-              <div class="text-4xl font-bold text-white mb-1">12</div>
-              <div class="text-sky-200 text-sm">Aeropuertos</div>
+              <div ref="stat1" class="text-2xl font-bold text-white mb-0.5">0</div>
+              <div class="text-sky-200 text-xs">Aeropuertos</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 mt-8 hover:bg-white/15 transition-all">
-              <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 mt-6 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
+              <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
               </div>
-              <div class="text-4xl font-bold text-white mb-1">6</div>
-              <div class="text-sky-200 text-sm">Hoteles</div>
+              <div ref="stat2" class="text-2xl font-bold text-white mb-0.5">0</div>
+              <div class="text-sky-200 text-xs">Hoteles</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition-all">
-              <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
+              <div class="w-10 h-10 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               </div>
-              <div class="text-4xl font-bold text-white mb-1">11</div>
-              <div class="text-sky-200 text-sm">Combustibles</div>
+              <div ref="stat3" class="text-2xl font-bold text-white mb-0.5">0</div>
+              <div class="text-sky-200 text-xs">Combustibles</div>
             </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 mt-8 hover:bg-white/15 transition-all">
-              <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10 mt-6 hover:bg-white/15 hover:border-white/20 transition-all cursor-default">
+              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
               </div>
-              <div class="text-4xl font-bold text-white mb-1">4</div>
-              <div class="text-sky-200 text-sm">Parques</div>
+              <div ref="stat4" class="text-2xl font-bold text-white mb-0.5">0</div>
+              <div class="text-sky-200 text-xs">Parques</div>
             </div>
           </div>
         </div>
@@ -73,22 +156,22 @@
     <section class="py-12 bg-white border-b border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-          <a href="https://aifa.aero/" target="_blank" class="hover:opacity-80 transition-opacity">
+          <a href="https://aifa.aero/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-16 object-contain" />
           </a>
-          <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity">
+          <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/mmts.png" alt="Mamut" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 object-contain" />
           </a>
-          <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity">
+          <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 object-contain" />
           </a>
         </div>
