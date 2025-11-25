@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
+const isDropdownOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
@@ -10,10 +11,34 @@ const handleScroll = () => {
 
 onMounted(() => window.addEventListener('scroll', handleScroll))
 onUnmounted(() => window.removeEventListener('scroll', handleScroll))
+
+interface NavItem {
+  name: string
+  path?: string
+  dropdown?: boolean
+  items?: { name: string; path: string }[]
+}
+
+const navItems: NavItem[] = [
+  { name: 'Nosotros', path: '/nosotros' },
+  { name: 'Servicios', path: '/servicios' },
+  { name: 'Noticias', path: '/noticias' },
+  {
+    name: 'Información Relevante',
+    dropdown: true,
+    items: [
+      { name: 'Normateca', path: '/transparencia' },
+      { name: 'Información Pública', path: '/transparencia' },
+      { name: 'Oferta Laboral', path: '/contacto' }
+    ]
+  },
+  { name: 'Transparencia', path: '/transparencia' },
+  { name: 'Protección de Datos', path: '/transparencia#privacidad' }
+]
 </script>
 
 <template>
-  <header :class="['fixed top-0 left-0 right-0 z-50 transition-all duration-300', isScrolled ? 'bg-white shadow-md' : 'bg-sky-900']">
+  <header :class="['fixed top-0 left-0 right-0 z-50 transition-all duration-300', isScrolled ? 'bg-white shadow-lg' : 'bg-gradient-to-r from-sky-900 to-slate-900']">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
 
@@ -33,21 +58,33 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
         <!-- Desktop Nav -->
         <nav class="hidden lg:flex items-center space-x-1">
-          <router-link v-for="item in ['Inicio', 'Nosotros', 'Servicios', 'Noticias', 'Transparencia', 'Contacto']"
-            :key="item"
-            :to="item === 'Inicio' ? '/' : '/' + item.toLowerCase()"
-            :class="['px-4 py-2 rounded-lg text-sm font-medium transition-colors',
-              isScrolled ? 'text-gray-600 hover:text-sky-600 hover:bg-sky-50' : 'text-white/90 hover:text-white hover:bg-white/10']">
-            {{ item }}
+          <template v-for="item in navItems" :key="item.name">
+            <!-- Dropdown Item -->
+            <div v-if="item.dropdown" class="relative" @mouseenter="isDropdownOpen = true" @mouseleave="isDropdownOpen = false">
+              <button :class="['px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1',
+                isScrolled ? 'text-gray-600 hover:text-sky-600 hover:bg-sky-50' : 'text-white/90 hover:text-white hover:bg-white/10']">
+                {{ item.name }}
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+              <div v-show="isDropdownOpen" class="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                <router-link v-for="subItem in item.items" :key="subItem.name" :to="subItem.path"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors">
+                  {{ subItem.name }}
+                </router-link>
+              </div>
+            </div>
+            <!-- Regular Item -->
+            <router-link v-else-if="item.path" :to="item.path"
+              :class="['px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+                isScrolled ? 'text-gray-600 hover:text-sky-600 hover:bg-sky-50' : 'text-white/90 hover:text-white hover:bg-white/10']">
+              {{ item.name }}
+            </router-link>
+          </template>
+          <router-link to="/contacto"
+            :class="['ml-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all',
+              isScrolled ? 'bg-sky-600 text-white hover:bg-sky-700' : 'bg-amber-500 text-white hover:bg-amber-600']">
+            Contacto
           </router-link>
-          <a href="tel:+555966890113"
-            :class="['ml-4 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all flex items-center space-x-2',
-              isScrolled ? 'bg-sky-600 text-white hover:bg-sky-700' : 'bg-white text-sky-700 hover:bg-sky-50']">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-            <span>Contactar</span>
-          </a>
         </nav>
 
         <!-- Mobile Menu Button -->
@@ -61,17 +98,26 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
       <!-- Mobile Menu -->
       <div v-if="isMenuOpen" class="lg:hidden pb-4">
-        <div class="bg-white rounded-xl shadow-lg p-4 space-y-2">
-          <router-link v-for="item in ['Inicio', 'Nosotros', 'Servicios', 'Noticias', 'Transparencia', 'Contacto']"
-            :key="item"
-            :to="item === 'Inicio' ? '/' : '/' + item.toLowerCase()"
-            @click="isMenuOpen = false"
-            class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-sky-50 hover:text-sky-600 font-medium">
-            {{ item }}
+        <div class="bg-white rounded-xl shadow-lg p-4 space-y-1">
+          <router-link to="/" @click="isMenuOpen = false" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-sky-50 hover:text-sky-600 font-medium">
+            Inicio
           </router-link>
-          <a href="tel:+555966890113" class="block w-full text-center px-4 py-3 bg-sky-600 text-white rounded-lg font-semibold mt-4">
-            Llamar Ahora
-          </a>
+          <template v-for="item in navItems" :key="item.name">
+            <template v-if="item.dropdown">
+              <div class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">{{ item.name }}</div>
+              <router-link v-for="subItem in item.items" :key="subItem.name" :to="subItem.path" @click="isMenuOpen = false"
+                class="block px-6 py-2.5 rounded-lg text-gray-600 hover:bg-sky-50 hover:text-sky-600 text-sm">
+                {{ subItem.name }}
+              </router-link>
+            </template>
+            <router-link v-else-if="item.path" :to="item.path" @click="isMenuOpen = false"
+              class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-sky-50 hover:text-sky-600 font-medium">
+              {{ item.name }}
+            </router-link>
+          </template>
+          <router-link to="/contacto" @click="isMenuOpen = false" class="block w-full text-center px-4 py-3 bg-sky-600 text-white rounded-lg font-semibold mt-4">
+            Contacto
+          </router-link>
         </div>
       </div>
     </div>
