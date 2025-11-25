@@ -44,19 +44,11 @@ const navItems: NavItem[] = [
       <div class="flex items-center justify-between h-16 lg:h-20">
 
         <!-- Logo -->
-        <router-link to="/" class="flex items-center space-x-3">
-          <!-- Logo que cambia según scroll -->
+        <router-link to="/" class="flex items-center">
           <img
-            v-if="isScrolled"
             src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png"
             alt="Grupo Mundo Maya"
-            class="h-10 object-contain"
-          />
-          <img
-            v-else
-            src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png"
-            alt="Unimos el cielo y la tierra"
-            class="h-10 object-contain"
+            :class="['h-12 object-contain transition-all', isScrolled ? '' : 'brightness-0 invert']"
           />
         </router-link>
 
