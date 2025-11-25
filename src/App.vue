@@ -14,7 +14,6 @@ import FooterSection from './components/FooterSection.vue'
       </router-view>
     </main>
     <FooterSection />
-    <ScrollTop />
   </div>
 </template>
 

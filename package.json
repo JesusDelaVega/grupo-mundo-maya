@@ -11,6 +11,7 @@
   "dependencies": {
     "@primevue/themes": "^4.4.1",
     "@vueuse/core": "^14.0.0",
+    "lucide-vue-next": "^0.554.0",
     "primeicons": "^7.0.0",
     "primevue": "^4.4.1",
     "vue": "^3.5.24",
