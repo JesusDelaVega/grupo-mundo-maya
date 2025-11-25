@@ -9,6 +9,10 @@ import ServiciosPage from './views/ServiciosPage.vue'
 import NoticiasPage from './views/NoticiasPage.vue'
 import ContactoPage from './views/ContactoPage.vue'
 import TransparenciaPage from './views/TransparenciaPage.vue'
+import NormatecaPage from './views/NormatecaPage.vue'
+import InformacionPublicaPage from './views/InformacionPublicaPage.vue'
+import OfertaLaboralPage from './views/OfertaLaboralPage.vue'
+import ProteccionDatosPage from './views/ProteccionDatosPage.vue'
 
 const routes = [
   { path: '/', component: HomePage },
@@ -17,6 +21,10 @@ const routes = [
   { path: '/noticias', component: NoticiasPage },
   { path: '/contacto', component: ContactoPage },
   { path: '/transparencia', component: TransparenciaPage },
+  { path: '/normateca', component: NormatecaPage },
+  { path: '/informacion-publica', component: InformacionPublicaPage },
+  { path: '/oferta-laboral', component: OfertaLaboralPage },
+  { path: '/proteccion-datos', component: ProteccionDatosPage },
 ]
 
 const router = createRouter({

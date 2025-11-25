@@ -27,13 +27,13 @@ const navItems: NavItem[] = [
     name: 'Información Relevante',
     dropdown: true,
     items: [
-      { name: 'Normateca', path: '/transparencia' },
-      { name: 'Información Pública', path: '/transparencia' },
-      { name: 'Oferta Laboral', path: '/contacto' }
+      { name: 'Normateca', path: '/normateca' },
+      { name: 'Información Pública', path: '/informacion-publica' },
+      { name: 'Oferta Laboral', path: '/oferta-laboral' }
     ]
   },
   { name: 'Transparencia', path: '/transparencia' },
-  { name: 'Protección de Datos', path: '/transparencia#privacidad' }
+  { name: 'Protección de Datos', path: '/proteccion-datos' }
 ]
 </script>
 

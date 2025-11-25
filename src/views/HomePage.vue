@@ -11,12 +11,11 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div class="flex items-center gap-3 mb-6">
-              <img src="https://www.gob.mx/cms/uploads/structure/image/1/home_gob.png" alt="Gobierno de México" class="h-12 bg-white rounded px-2 py-1" />
-              <span class="text-sky-200 text-sm">2024 SEDENA GAFSACOMM</span>
+              <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-14" />
             </div>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Unimos el <span class="text-amber-400">cielo</span><br/>y la <span class="text-amber-400">tierra</span>
-            </h1>
+            <div class="mb-6">
+              <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-32 md:h-40" />
+            </div>
             <p class="text-xl text-sky-100 mb-8 leading-relaxed max-w-xl">
               Administramos y operamos infraestructura estratégica nacional: aeropuertos, hoteles y servicios de combustible para el desarrollo de México.
             </p>
@@ -73,37 +72,25 @@
     <!-- Marcas/Subsidiarias -->
     <section class="py-12 bg-white border-b border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-          <div class="flex items-center gap-3 text-gray-400 hover:text-sky-600 transition-colors cursor-pointer">
-            <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center">
-              <svg class="w-7 h-7 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-            </div>
-            <span class="font-bold text-gray-700">AIFA</span>
-          </div>
-          <div class="flex items-center gap-3 text-gray-400 hover:text-sky-600 transition-colors cursor-pointer">
-            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
-              <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z"/></svg>
-            </div>
-            <span class="font-bold text-gray-700">Mexicana</span>
-          </div>
-          <div class="flex items-center gap-3 text-gray-400 hover:text-amber-600 transition-colors cursor-pointer">
-            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
-              <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-            </div>
-            <span class="font-bold text-gray-700">Mamut</span>
-          </div>
-          <div class="flex items-center gap-3 text-gray-400 hover:text-cyan-600 transition-colors cursor-pointer">
-            <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center">
-              <svg class="w-7 h-7 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
-            </div>
-            <span class="font-bold text-gray-700">AI Tulum</span>
-          </div>
-          <div class="flex items-center gap-3 text-gray-400 hover:text-green-600 transition-colors cursor-pointer">
-            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-              <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
-            </div>
-            <span class="font-bold text-gray-700">Tren Maya</span>
-          </div>
+        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          <a href="https://aifa.aero/" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-16 object-contain" />
+          </a>
+          <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 object-contain" />
+          </a>
+          <a href="#" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/mmts.png" alt="Mamut" class="h-16 object-contain" />
+          </a>
+          <a href="#" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 object-contain" />
+          </a>
+          <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 object-contain" />
+          </a>
+          <a href="#" class="hover:opacity-80 transition-opacity">
+            <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 object-contain" />
+          </a>
         </div>
       </div>
     </section>
@@ -118,27 +105,27 @@
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Misión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div class="w-20 h-20 mx-auto mb-6">
+              <img src="https://grupomundomaya.com/assets/img/img_mision.png" alt="Misión" class="w-full h-full object-contain" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">Misión</h3>
             <p class="text-gray-600 leading-relaxed">Administrar, controlar, supervisar, operar y explotar bienes nacionales bajo la rectoría del Estado, contribuyendo al bienestar social y desarrollo económico.</p>
           </div>
 
           <!-- Visión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div class="w-20 h-20 mx-auto mb-6">
+              <img src="https://grupomundomaya.com/assets/img/img_vision.png" alt="Visión" class="w-full h-full object-contain" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">Visión</h3>
             <p class="text-gray-600 leading-relaxed">Ser reconocidos como la Entidad Paraestatal más importante de México, referente de excelencia en las diversas actividades económicas.</p>
           </div>
 
           <!-- Objetivo -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
+            <div class="w-20 h-20 mx-auto mb-6">
+              <img src="https://grupomundomaya.com/assets/img/img_objetivo.png" alt="Objetivo" class="w-full h-full object-contain" />
             </div>
             <h3 class="text-xl font-bold text-gray-900 mb-4">Objetivo</h3>
             <p class="text-gray-600 leading-relaxed">Contribuir al Desarrollo Nacional mediante estrategias orientadas a la mejora continua de las actividades económicas del grupo.</p>
@@ -249,18 +236,13 @@
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Aeropuertos Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="h-48 bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center relative">
-              <svg class="w-full h-full text-sky-300 absolute inset-0 p-4" viewBox="0 0 100 60" fill="currentColor" opacity="0.3">
-                <path d="M20,30 Q30,10 50,20 T80,30 Q70,50 50,45 T20,30"/>
-              </svg>
-              <div class="relative z-10 grid grid-cols-4 gap-2 p-4">
-                <div v-for="i in 12" :key="i" class="w-3 h-3 bg-sky-500 rounded-full animate-pulse" :style="{animationDelay: i * 0.1 + 's'}"></div>
-              </div>
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-56 bg-sky-50 flex items-center justify-center p-4">
+              <img src="https://grupomundomaya.com/assets/img/MAPA AROPUERTOS JIG_NOMBRES_130625.png" alt="Mapa de Aeropuertos" class="w-full h-full object-contain" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                <img src="https://grupomundomaya.com/assets/img/iconavion.png" alt="Avión" class="w-6 h-6" />
                 12 Aeropuertos
               </h3>
               <p class="text-gray-600 text-sm">Nogales, Nuevo Laredo, Cd. Victoria, Tamuín, Uruapan, Puebla, Ixtepec, Palenque, Campeche, Chetumal, Tulum, Del Norte</p>
@@ -268,37 +250,27 @@
           </div>
 
           <!-- Hoteles Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="h-48 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center relative">
-              <svg class="w-full h-full text-amber-300 absolute inset-0 p-4" viewBox="0 0 100 60" fill="currentColor" opacity="0.3">
-                <path d="M20,30 Q30,10 50,20 T80,30 Q70,50 50,45 T20,30"/>
-              </svg>
-              <div class="relative z-10 grid grid-cols-3 gap-4 p-4">
-                <div v-for="i in 6" :key="i" class="w-4 h-4 bg-amber-500 rounded-lg animate-pulse" :style="{animationDelay: i * 0.15 + 's'}"></div>
-              </div>
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-56 bg-amber-50 flex items-center justify-center p-4">
+              <img src="https://grupomundomaya.com/assets/img/MAPA HOTELES_Y PARQUES_110625 sin iconos.png" alt="Mapa de Hoteles y Parques" class="w-full h-full object-contain" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                6 Hoteles
+                <img src="https://grupomundomaya.com/assets/img/icono hoteles.png" alt="Hoteles" class="w-6 h-6" />
+                6 Hoteles + 4 Parques
               </h3>
-              <p class="text-gray-600 text-sm">Palenque, Edzná, Nuevo Uxmal, Chichén Itzá, Tulum, Calakmul</p>
+              <p class="text-gray-600 text-sm">Palenque, Edzná, Nuevo Uxmal, Chichén Itzá, Tulum, Calakmul y parques temáticos</p>
             </div>
           </div>
 
           <!-- Combustibles Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="h-48 bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center relative">
-              <svg class="w-full h-full text-emerald-300 absolute inset-0 p-4" viewBox="0 0 100 60" fill="currentColor" opacity="0.3">
-                <path d="M20,30 Q30,10 50,20 T80,30 Q70,50 50,45 T20,30"/>
-              </svg>
-              <div class="relative z-10 grid grid-cols-4 gap-3 p-4">
-                <div v-for="i in 11" :key="i" class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse" :style="{animationDelay: i * 0.12 + 's'}"></div>
-              </div>
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="h-56 bg-emerald-50 flex items-center justify-center p-4">
+              <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de Combustibles" class="w-full h-full object-contain" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
-                <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <img src="https://grupomundomaya.com/assets/img/iconcombustibles.png" alt="Combustibles" class="w-6 h-6" />
                 11 Puntos de Combustible
               </h3>
               <p class="text-gray-600 text-sm">Distribución estratégica de combustible de aviación en ubicaciones clave</p>
