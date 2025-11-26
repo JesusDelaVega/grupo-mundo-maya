@@ -27,10 +27,8 @@
           <div class="group relative">
             <div class="absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-700 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
             <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
-              <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-sky-500/30">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                </svg>
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_mision.png" alt="Misión" class="w-full h-full object-contain" />
               </div>
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
               <p class="text-gray-600 leading-relaxed">Administrar, controlar, supervisar, operar y explotar bienes nacionales y sociedades de actividades económicas diversas, coadyuvando a su crecimiento, desarrollo, rentabilidad, sostenibilidad y excelencia bajo la rectoría del Estado.</p>
@@ -46,11 +44,8 @@
           <div class="group relative">
             <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
             <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
-              <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                </svg>
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_vision.png" alt="Visión" class="w-full h-full object-contain" />
               </div>
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
               <p class="text-gray-600 leading-relaxed">Ser reconocidos como la Entidad Paraestatal más importante de México, referente de excelencia en las diversas actividades económicas en las que participa el Grupo Mundo Maya.</p>
@@ -66,10 +61,8 @@
           <div class="group relative">
             <div class="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
             <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
-              <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                </svg>
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_objetivo.png" alt="Objetivo" class="w-full h-full object-contain" />
               </div>
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Objetivo</h3>
               <p class="text-gray-600 leading-relaxed">Contribuir al Desarrollo Nacional mediante estrategias orientadas a la mejora continua de las actividades económicas desempeñadas por el Grupo.</p>

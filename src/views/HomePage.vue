@@ -44,7 +44,7 @@ onMounted(() => {
         <div class="max-w-5xl mx-auto text-center">
           <!-- Logo SEDENA 2024 -->
           <div ref="logoRef" class="flex items-center justify-center mb-6">
-            <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-52" style="filter: brightness(0) invert(1);" />
+            <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-28 sm:h-36 md:h-44 lg:h-52 w-auto" style="filter: brightness(0) invert(1);" />
           </div>
           <!-- Slogan - pequeño, 1/4 del tamaño -->
           <div ref="sloganRef" class="mb-8 flex justify-center">
@@ -97,59 +97,171 @@ onMounted(() => {
       </div>
     </section>
 
-    <!-- Misión, Visión, Objetivo -->
-    <section class="py-20 bg-gray-50">
+    <!-- Nuestros Principios -->
+    <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Nosotros</span>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Nuestro Propósito</h2>
+          <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Nuestros Principios</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Lo que nos define</h2>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Misión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-24 h-24 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_mision.png" alt="Misión" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Misión</h3>
-            <p class="text-sm text-sky-600 font-medium mb-4">Administrar, controlar, supervisar, operar y explotar bienes nacionales</p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Administrar, controlar, supervisar, operar y explotar bienes nacionales y sociedades de actividades económicas diversas, coadyuvando a su crecimiento, desarrollo, rentabilidad, sostenibilidad y excelencia bajo la rectoría del Estado.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <span class="text-xs text-gray-400 font-medium">Compromiso institucional</span>
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-700 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_mision.png" alt="Misión" class="w-full h-full object-contain" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Misión</h3>
+              <p class="text-gray-600 leading-relaxed">Administrar, controlar, supervisar, operar y explotar bienes nacionales y sociedades de actividades económicas diversas, coadyuvando a su crecimiento, desarrollo, rentabilidad, sostenibilidad y excelencia bajo la rectoría del Estado.</p>
+              <div class="mt-6 pt-6 border-t border-gray-100">
+                <div class="flex items-center text-sky-600 text-sm font-medium">
+                  <span class="w-2 h-2 bg-sky-500 rounded-full mr-2"></span>
+                  Compromiso institucional
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Visión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-24 h-24 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_vision.png" alt="Visión" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Visión</h3>
-            <p class="text-sm text-amber-600 font-medium mb-4">Ser reconocidos como la Entidad Paraestatal más importante</p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Ser reconocidos como la Entidad Paraestatal más importante de México, referente de excelencia en las diversas actividades económicas en las que participa el Grupo Mundo Maya.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <span class="text-xs text-gray-400 font-medium">Liderazgo nacional</span>
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_vision.png" alt="Visión" class="w-full h-full object-contain" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Visión</h3>
+              <p class="text-gray-600 leading-relaxed">Ser reconocidos como la Entidad Paraestatal más importante de México, referente de excelencia en las diversas actividades económicas en las que participa el Grupo Mundo Maya.</p>
+              <div class="mt-6 pt-6 border-t border-gray-100">
+                <div class="flex items-center text-amber-600 text-sm font-medium">
+                  <span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
+                  Liderazgo nacional
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Objetivo -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-24 h-24 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_objetivo.png" alt="Objetivo" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Objetivo</h3>
-            <p class="text-sm text-emerald-600 font-medium mb-4">Contribuir al Desarrollo Nacional</p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Contribuir al Desarrollo Nacional mediante estrategias orientadas a la mejora continua de las actividades económicas desempeñadas por el Grupo.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100">
-              <span class="text-xs text-gray-400 font-medium">Crecimiento sostenible</span>
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-20 h-20 mx-auto mb-6">
+                <img src="https://grupomundomaya.com/assets/img/img_objetivo.png" alt="Objetivo" class="w-full h-full object-contain" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Objetivo</h3>
+              <p class="text-gray-600 leading-relaxed">Contribuir al Desarrollo Nacional mediante estrategias orientadas a la mejora continua de las actividades económicas desempeñadas por el Grupo.</p>
+              <div class="mt-6 pt-6 border-t border-gray-100">
+                <div class="flex items-center text-emerald-600 text-sm font-medium">
+                  <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                  Crecimiento sostenible
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestros Servicios -->
+    <section class="py-20 bg-white border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">Nuestros Servicios</span>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Infraestructura para México</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Operamos tres pilares fundamentales que conectan y fortalecen la economía nacional.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Hoteles -->
+          <router-link to="/servicios#hoteles" class="group relative block">
+            <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30">
+                <img src="https://grupomundomaya.com/assets/img/icono hoteles.png" alt="Hoteles" class="w-10 h-10" style="filter: brightness(0) invert(1);" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Hoteles</h3>
+              <p class="text-gray-600 mb-4">Servicios turísticos de calidad en las zonas arqueológicas más importantes de México.</p>
+              <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                  6 hoteles en zonas arqueológicas
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                  4 parques temáticos
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                  1 museo paleontológico
+                </li>
+              </ul>
+              <div class="flex items-center text-amber-600 font-semibold group-hover:text-amber-700">
+                Ver más
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </div>
+            </div>
+          </router-link>
+
+          <!-- Aeropuertos -->
+          <router-link to="/servicios#aeropuertos" class="group relative block">
+            <div class="absolute inset-0 bg-gradient-to-br from-sky-500 to-sky-700 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-sky-500/30">
+                <img src="https://grupomundomaya.com/assets/img/iconavion.png" alt="Aeropuertos" class="w-10 h-10" style="filter: brightness(0) invert(1);" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Aeropuertos</h3>
+              <p class="text-gray-600 mb-4">Red de aeropuertos estratégicos que conectan el país de norte a sur.</p>
+              <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
+                  12 aeropuertos en operación
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
+                  Certificaciones AFAC/OACI
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-sky-500 rounded-full"></span>
+                  Conectividad con Tren Maya
+                </li>
+              </ul>
+              <div class="flex items-center text-sky-600 font-semibold group-hover:text-sky-700">
+                Ver más
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </div>
+            </div>
+          </router-link>
+
+          <!-- Combustibles -->
+          <router-link to="/servicios#combustibles" class="group relative block">
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-3xl transform -rotate-1 group-hover:-rotate-2 transition-transform duration-300"></div>
+            <div class="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transform group-hover:-translate-y-2 transition-all duration-300">
+              <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/30">
+                <img src="https://grupomundomaya.com/assets/img/iconcombustibles.png" alt="Combustibles" class="w-10 h-10" style="filter: brightness(0) invert(1);" />
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Combustibles</h3>
+              <p class="text-gray-600 mb-4">Suministro de turbosina y combustible de aviación a nivel nacional.</p>
+              <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                  11 puntos de suministro
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                  Turbosina JET-A1 certificada
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                  Servicio 24/7 disponible
+                </li>
+              </ul>
+              <div class="flex items-center text-emerald-600 font-semibold group-hover:text-emerald-700">
+                Ver más
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
     </section>
