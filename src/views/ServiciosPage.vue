@@ -842,7 +842,7 @@ const closeLightbox = () => {
             <!-- Museo Mamut Santa Lucía -->
             <a href="https://mamutsantalucia.com/" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
               <div class="h-44 relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
-                <img src="https://mamutsantalucia.com/assets/images/logotipo.png" alt="Museo Mamut" class="absolute inset-0 w-full h-full object-contain p-8 opacity-30" />
+                <img src="https://www.gob.mx/cms/uploads/article/main_image/136116/cover_m_mamut_4.jpg" alt="Museo Mamut" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
                 <span class="absolute top-4 right-4 px-3 py-1 bg-amber-500 rounded-full text-xs font-semibold text-white">Paleontología</span>
                 <div class="absolute bottom-4 left-5">
