@@ -76,12 +76,12 @@ const closeLightbox = () => {
               <!-- Logos de marcas -->
               <div class="mt-auto space-y-3">
                 <div class="flex items-center gap-3 bg-white/10 rounded-xl p-3 backdrop-blur-sm">
-                  <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-14 object-contain" />
-                  <span class="text-white font-medium text-sm">AIFA Felipe Ángeles</span>
+                  <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-10 object-contain" />
+                  <span class="text-white font-medium text-sm">Red de Aeropuertos</span>
                 </div>
                 <div class="flex items-center gap-3 bg-white/10 rounded-xl p-3 backdrop-blur-sm">
-                  <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-8 object-contain" />
-                  <span class="text-white font-medium text-sm">Mexicana de Aviación</span>
+                  <img src="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/LOGO_AIFA.png" alt="AIFA" class="h-8 object-contain" />
+                  <span class="text-white font-medium text-sm">AIFA Felipe Ángeles</span>
                 </div>
                 <router-link to="/servicios#aeropuertos" class="flex items-center justify-center gap-2 bg-white text-sky-700 font-semibold py-3 rounded-xl hover:bg-sky-50 transition-colors">
                   Ver más
