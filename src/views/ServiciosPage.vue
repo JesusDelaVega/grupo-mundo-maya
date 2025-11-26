@@ -549,7 +549,7 @@ const closeLightbox = () => {
           <div class="mt-6">
             <a href="https://aifa.aero/" target="_blank" class="group block bg-gradient-to-r from-sky-900 to-slate-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all">
               <div class="flex flex-col md:flex-row items-center gap-6 p-6">
-                <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-20 md:h-[104px] object-contain" />
+                <img src="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/LOGO_AIFA.png" alt="AIFA" class="h-20 md:h-[104px] object-contain" />
                 <div class="flex-1 text-center md:text-left">
                   <h5 class="text-xl font-bold text-white mb-1">Aeropuerto Internacional Felipe Ángeles (AIFA)</h5>
                   <p class="text-sky-200 text-sm">Santa Lucía, Estado de México • El aeropuerto más moderno de Latinoamérica</p>
