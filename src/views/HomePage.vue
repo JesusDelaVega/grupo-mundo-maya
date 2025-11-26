@@ -188,7 +188,7 @@ onMounted(() => {
                   Experiencias culturales
                 </li>
               </ul>
-              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-amber-500 text-white rounded-lg font-semibold hover:bg-amber-600 transition-colors">
+              <router-link to="/servicios#hoteles" class="inline-flex items-center px-4 py-2 bg-amber-500 text-white rounded-lg font-semibold hover:bg-amber-600 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
@@ -219,7 +219,7 @@ onMounted(() => {
                   Mexicana de Aviación
                 </li>
               </ul>
-              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors">
+              <router-link to="/servicios#aeropuertos" class="inline-flex items-center px-4 py-2 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
@@ -250,7 +250,7 @@ onMounted(() => {
                   Cobertura nacional
                 </li>
               </ul>
-              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
+              <router-link to="/servicios#combustibles" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
