@@ -267,90 +267,92 @@ const closeLightbox = () => {
           <!-- Aeropuertos Destacados -->
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <!-- Tulum -->
-            <a href="https://aitulum.com/es" target="_blank" class="group bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-4">
-                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
-                  <span class="text-white/80 text-sm font-mono">TQO</span>
+            <a href="https://aitulum.com/es" target="_blank" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="relative h-48 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="Aeropuerto de Tulum" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-sky-900/90 via-sky-900/40 to-transparent"></div>
+                <div class="absolute top-4 left-4 flex gap-2">
+                  <span class="px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-sky-700">Internacional</span>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors">Aeropuerto Internacional de Tulum</h4>
-                <p class="text-sky-100 text-sm mb-4">Felipe Carrillo Puerto • Quintana Roo</p>
+                <div class="absolute top-4 right-4">
+                  <span class="text-white/90 text-sm font-mono bg-black/30 px-2 py-1 rounded">TQO</span>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h4 class="text-xl font-bold text-white mb-1">Aeropuerto Internacional de Tulum</h4>
+                  <p class="text-sky-200 text-sm">Felipe Carrillo Puerto • Quintana Roo</p>
+                </div>
+              </div>
+              <div class="p-5">
                 <div class="space-y-2 text-sm">
-                  <div class="flex items-center gap-2 text-sky-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                  <div class="flex items-center gap-2 text-gray-600">
+                    <svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     <span>Conectado con Tren Maya</span>
                   </div>
-                  <div class="flex items-center gap-2 text-sky-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <div class="flex items-center gap-2 text-gray-600">
+                    <svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     <span>Operador: GAFSACOMM</span>
                   </div>
                 </div>
-                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
-                  <span class="text-white text-sm font-medium">Ver vuelos y horarios</span>
-                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                  <span class="text-sky-600 text-sm font-medium">Ver vuelos y horarios</span>
+                  <svg class="w-5 h-5 text-sky-500 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </div>
               </div>
             </a>
 
             <!-- Nuevo Laredo -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nuevo_laredo.html" target="_blank" class="group bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-4">
-                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
-                  <span class="text-white/80 text-sm font-mono">NLD / MMNL</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nuevo_laredo.html" target="_blank" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="relative h-48 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_nuevo_laredo/foto NUEVO LAREDO.jpg" alt="Aeropuerto Nuevo Laredo" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
+                <div class="absolute top-4 left-4 flex gap-2">
+                  <span class="px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-slate-700">Internacional</span>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-amber-200 transition-colors">Aeropuerto Internacional Quetzalcóatl</h4>
-                <p class="text-gray-300 text-sm mb-4">Nuevo Laredo • Tamaulipas</p>
-                <div class="space-y-2 text-sm">
-                  <div class="flex items-center gap-2 text-gray-300">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
-                    <span>299.84 hectáreas</span>
-                  </div>
-                  <div class="flex items-center gap-2 text-gray-300">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-                    <span>Pista: 2,000 m × 45 m</span>
-                  </div>
-                  <div class="flex items-center gap-2 text-gray-300">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
-                    <span>7 km de Nuevo Laredo</span>
-                  </div>
+                <div class="absolute top-4 right-4">
+                  <span class="text-white/90 text-sm font-mono bg-black/30 px-2 py-1 rounded">NLD</span>
                 </div>
-                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
-                  <div class="flex gap-2">
-                    <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">AFAC</span>
-                    <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">PROFEPA</span>
-                  </div>
-                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h4 class="text-xl font-bold text-white mb-1">Aeropuerto Quetzalcóatl</h4>
+                  <p class="text-gray-300 text-sm">Nuevo Laredo • Tamaulipas</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="grid grid-cols-2 gap-3 text-sm mb-3">
+                  <div class="text-gray-500"><span class="font-medium text-gray-700">299.84 ha</span> superficie</div>
+                  <div class="text-gray-500"><span class="font-medium text-gray-700">2,000 m</span> pista</div>
+                </div>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                  <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">PROFEPA</span>
+                  <span class="px-2 py-1 bg-sky-50 text-sky-700 rounded text-xs">Frontera EE.UU.</span>
                 </div>
               </div>
             </a>
 
             <!-- Nogales -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nogales.html" target="_blank" class="group bg-gradient-to-br from-amber-600 to-amber-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-4">
-                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
-                  <span class="text-white/80 text-sm font-mono">NOG / MMNG</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nogales.html" target="_blank" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="relative h-48 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_nogales/foto NOGALES.jpg" alt="Aeropuerto Nogales" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-amber-900/90 via-amber-900/40 to-transparent"></div>
+                <div class="absolute top-4 left-4 flex gap-2">
+                  <span class="px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-amber-700">Internacional</span>
                 </div>
-                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-amber-200 transition-colors">Aeropuerto Internacional de Nogales</h4>
-                <p class="text-amber-100 text-sm mb-4">Nogales • Sonora</p>
-                <div class="space-y-2 text-sm">
-                  <div class="flex items-center gap-2 text-amber-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
-                    <span>108.6 hectáreas</span>
-                  </div>
-                  <div class="flex items-center gap-2 text-amber-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-                    <span>Pista: 1,800 m</span>
-                  </div>
-                  <div class="flex items-center gap-2 text-amber-200">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
-                    <span>13.5 km de Nogales</span>
-                  </div>
+                <div class="absolute top-4 right-4">
+                  <span class="text-white/90 text-sm font-mono bg-black/30 px-2 py-1 rounded">NOG</span>
                 </div>
-                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
-                  <span class="text-white/80 text-xs">Frontera con Arizona, EE.UU.</span>
-                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h4 class="text-xl font-bold text-white mb-1">Aeropuerto de Nogales</h4>
+                  <p class="text-amber-200 text-sm">Nogales • Sonora</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="grid grid-cols-2 gap-3 text-sm mb-3">
+                  <div class="text-gray-500"><span class="font-medium text-gray-700">108.6 ha</span> superficie</div>
+                  <div class="text-gray-500"><span class="font-medium text-gray-700">1,800 m</span> pista</div>
+                </div>
+                <div class="flex flex-wrap gap-1">
+                  <span class="px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs">Frontera Arizona</span>
+                  <span class="px-2 py-1 bg-sky-50 text-sky-700 rounded text-xs">13.5 km ciudad</span>
                 </div>
               </div>
             </a>
@@ -360,97 +362,198 @@ const closeLightbox = () => {
           <h4 class="text-lg font-semibold text-gray-700 mb-4 mt-10">Más aeropuertos de la red</h4>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             <!-- Ciudad Victoria -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_cd-victoria.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-mono text-gray-400">CVM / MMCV</span>
-                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_cd-victoria.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_ciudad_victoria/foto CD VICTORIA.jpg" alt="Aeropuerto Cd. Victoria" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-sky-500 text-white rounded text-xs">Internacional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">CVM</span>
               </div>
-              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Gral. Pedro José Méndez</h5>
-              <p class="text-sm text-gray-500 mb-3">Ciudad Victoria, Tamaulipas</p>
-              <div class="space-y-1 text-xs text-gray-500">
-                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">388.70 ha</span></div>
-                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">2,200 m</span></div>
-              </div>
-              <div class="mt-3 pt-3 border-t border-gray-100 flex gap-1">
-                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
-                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">PROFEPA</span>
-                <span class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">ACA-1</span>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Gral. Pedro José Méndez</h5>
+                <p class="text-xs text-gray-500 mb-2">Ciudad Victoria, Tamaulipas</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">388.70 ha</strong></span>
+                  <span><strong class="text-gray-700">2,200 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                  <span class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">ACA-1</span>
+                </div>
               </div>
             </a>
 
             <!-- Puebla -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_puebla.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-mono text-gray-400">PBC / MMPB</span>
-                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_puebla.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_puebla/foto PUEBLA.jpg" alt="Aeropuerto Puebla" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-sky-500 text-white rounded text-xs">Internacional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">PBC</span>
               </div>
-              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Hermanos Serdán</h5>
-              <p class="text-sm text-gray-500 mb-3">Puebla (Huejotzingo)</p>
-              <div class="space-y-1 text-xs text-gray-500">
-                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">518.1 ha</span></div>
-                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">3,605 m</span></div>
-              </div>
-              <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-1">
-                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
-                <span class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">ACA-1</span>
-                <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Hermanos Serdán</h5>
+                <p class="text-xs text-gray-500 mb-2">Puebla (Huejotzingo)</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">518.1 ha</strong></span>
+                  <span><strong class="text-gray-700">3,605 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                  <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+                </div>
               </div>
             </a>
 
             <!-- Uruapan -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_uruapan.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-mono text-gray-400">UPN / MMPN</span>
-                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_uruapan.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_uruapan/foto URUAPAN.jpg" alt="Aeropuerto Uruapan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-sky-500 text-white rounded text-xs">Internacional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">UPN</span>
               </div>
-              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Lic. Ignacio López Rayón</h5>
-              <p class="text-sm text-gray-500 mb-3">Uruapan, Michoacán</p>
-              <div class="space-y-1 text-xs text-gray-500">
-                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">263.8 ha</span></div>
-                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">2,400 m</span></div>
-              </div>
-              <div class="mt-3 pt-3 border-t border-gray-100 flex gap-1">
-                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
-                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">PROFEPA</span>
-                <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Lic. Ignacio López Rayón</h5>
+                <p class="text-xs text-gray-500 mb-2">Uruapan, Michoacán</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">263.8 ha</strong></span>
+                  <span><strong class="text-gray-700">2,400 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                  <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+                </div>
               </div>
             </a>
 
             <!-- Tamuín -->
-            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_tamuin.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-xs font-mono text-gray-400">TSL / MMTN</span>
-                <span class="px-2 py-0.5 bg-gray-100 text-gray-700 rounded text-xs">Regional</span>
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_tamuin.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_tamuin/foto TAMUIN.jpg" alt="Aeropuerto Tamuín" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-gray-500 text-white rounded text-xs">Regional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">TSL</span>
               </div>
-              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Aeropuerto de Tamuín</h5>
-              <p class="text-sm text-gray-500 mb-3">Tamuín, San Luis Potosí</p>
-              <div class="space-y-1 text-xs text-gray-500">
-                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">122.52 ha</span></div>
-                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">1,405 m</span></div>
-              </div>
-              <div class="mt-3 pt-3 border-t border-gray-100">
-                <span class="text-xs text-gray-400">Hub regional de negocios</span>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Aeropuerto de Tamuín</h5>
+                <p class="text-xs text-gray-500 mb-2">Tamuín, San Luis Potosí</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">122.52 ha</strong></span>
+                  <span><strong class="text-gray-700">1,405 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100">
+                  <span class="text-xs text-gray-400">Hub regional de negocios</span>
+                </div>
               </div>
             </a>
           </div>
 
-          <!-- Resto de Aeropuertos -->
-          <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Ixtepec</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Palenque</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Campeche</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Chetumal</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Del Norte (AIFA)</span>
-            </div>
+          <!-- Resto de Aeropuertos con imágenes -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Campeche -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_campeche.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_campeche/foto CAMPECHE.jpg" alt="Aeropuerto Campeche" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-sky-500 text-white rounded text-xs">Internacional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">CPE</span>
+              </div>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Ing. Alberto Acuña Ongay</h5>
+                <p class="text-xs text-gray-500 mb-2">Campeche, Campeche</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">413.73 ha</strong></span>
+                  <span><strong class="text-gray-700">2,500 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-sky-50 text-sky-700 rounded text-xs">9 km ciudad</span>
+                  <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded text-xs">B-727</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Chetumal -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_chetumal.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aerochetumal/foto CHETUMAL.jpg" alt="Aeropuerto Chetumal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-sky-500 text-white rounded text-xs">Internacional</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">CTM</span>
+              </div>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Aeropuerto de Chetumal</h5>
+                <p class="text-xs text-gray-500 mb-2">Chetumal, Quintana Roo</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">230 ha</strong></span>
+                  <span><strong class="text-gray-700">2,693 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs">Frontera Belice</span>
+                  <span class="px-1.5 py-0.5 bg-sky-50 text-sky-700 rounded text-xs">2 km ciudad</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Ixtepec -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_ixtepec.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropuerto_ciudad_ixtepec/foto CD IXTEPEC.jpg" alt="Aeropuerto Ixtepec" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-slate-500 text-white rounded text-xs">Militar/Civil</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">IZT</span>
+              </div>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Base Aérea Militar N° 2</h5>
+                <p class="text-xs text-gray-500 mb-2">Cd. Ixtepec, Oaxaca</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">125.9 ha</strong></span>
+                  <span><strong class="text-gray-700">2,323 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-xs">Gral. A. Cárdenas</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Palenque -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_palenque.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="relative h-32 overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/aeropalenque/foto PALENQUE.jpg" alt="Aeropuerto Palenque" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <span class="absolute top-2 right-2 px-2 py-0.5 bg-emerald-500 text-white rounded text-xs">Turístico</span>
+                <span class="absolute bottom-2 left-2 text-white text-xs font-mono">PQM</span>
+              </div>
+              <div class="p-4">
+                <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors text-sm">Aeropuerto de Palenque</h5>
+                <p class="text-xs text-gray-500 mb-2">Palenque, Chiapas</p>
+                <div class="flex justify-between text-xs text-gray-500">
+                  <span><strong class="text-gray-700">201.5 ha</strong></span>
+                  <span><strong class="text-gray-700">2,450 m</strong> pista</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-gray-100 flex gap-1">
+                  <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">DGAC</span>
+                  <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded text-xs">Zona Arqueológica</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- AIFA -->
+          <div class="mt-6">
+            <a href="https://aifa.aero/" target="_blank" class="group block bg-gradient-to-r from-sky-900 to-slate-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all">
+              <div class="flex flex-col md:flex-row items-center gap-6 p-6">
+                <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-16 md:h-20 object-contain" />
+                <div class="flex-1 text-center md:text-left">
+                  <h5 class="text-xl font-bold text-white mb-1">Aeropuerto Internacional Felipe Ángeles (AIFA)</h5>
+                  <p class="text-sky-200 text-sm">Santa Lucía, Estado de México • El aeropuerto más moderno de Latinoamérica</p>
+                </div>
+                <div class="flex items-center gap-2 text-white">
+                  <span class="text-sm">Visitar sitio oficial</span>
+                  <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -637,11 +740,13 @@ const closeLightbox = () => {
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <!-- Parque Nuevo Uxmal -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/nuevo_uxmal.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
-              <div class="h-40 bg-gradient-to-br from-emerald-500 to-emerald-700 p-5 relative">
-                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">332.99 ha</span>
+              <div class="h-44 relative overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/museos-parques/nuevo-uxmal/nuevouxmal.jpg" alt="Parque Nuevo Uxmal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/30 to-transparent"></div>
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-emerald-700">332.99 ha</span>
                 <div class="absolute bottom-4 left-5">
                   <h4 class="text-xl font-bold text-white">Parque Nuevo Uxmal</h4>
-                  <p class="text-emerald-100 text-sm">Santa Elena, Yucatán</p>
+                  <p class="text-emerald-200 text-sm">Santa Elena, Yucatán</p>
                 </div>
               </div>
               <div class="p-5">
@@ -667,11 +772,13 @@ const closeLightbox = () => {
 
             <!-- Parque La Plancha -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/la_plancha.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
-              <div class="h-40 bg-gradient-to-br from-purple-500 to-purple-700 p-5 relative">
-                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">20 ha</span>
+              <div class="h-44 relative overflow-hidden">
+                <img src="https://grupomundomaya.com/assets/img/museos-parques/plancha.png" alt="Parque La Plancha" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/30 to-transparent"></div>
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-purple-700">20 ha</span>
                 <div class="absolute bottom-4 left-5">
                   <h4 class="text-xl font-bold text-white">Parque La Plancha</h4>
-                  <p class="text-purple-100 text-sm">Centro de Mérida, Yucatán</p>
+                  <p class="text-purple-200 text-sm">Centro de Mérida, Yucatán</p>
                 </div>
               </div>
               <div class="p-5">
@@ -697,11 +804,13 @@ const closeLightbox = () => {
 
             <!-- Parque del Jaguar -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/jaguar.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
-              <div class="h-40 bg-gradient-to-br from-amber-500 to-amber-700 p-5 relative">
-                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">13.5 ha</span>
+              <div class="h-44 relative overflow-hidden">
+                <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Tulum-1920w.jpg" alt="Parque del Jaguar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-gradient-to-t from-amber-900/90 via-amber-900/30 to-transparent"></div>
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-amber-700">13.5 ha</span>
                 <div class="absolute bottom-4 left-5">
                   <h4 class="text-xl font-bold text-white">Parque del Jaguar</h4>
-                  <p class="text-amber-100 text-sm">Tulum, Quintana Roo</p>
+                  <p class="text-amber-200 text-sm">Tulum, Quintana Roo</p>
                 </div>
               </div>
               <div class="p-5">
@@ -726,11 +835,13 @@ const closeLightbox = () => {
 
             <!-- Museo Mamut Santa Lucía -->
             <a href="https://mamutsantalucia.com/" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
-              <div class="h-40 bg-gradient-to-br from-slate-700 to-slate-900 p-5 relative">
-                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Paleontología</span>
+              <div class="h-44 relative overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
+                <img src="https://mamutsantalucia.com/assets/images/logotipo.png" alt="Museo Mamut" class="absolute inset-0 w-full h-full object-contain p-8 opacity-30" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-transparent"></div>
+                <span class="absolute top-4 right-4 px-3 py-1 bg-amber-500 rounded-full text-xs font-semibold text-white">Paleontología</span>
                 <div class="absolute bottom-4 left-5">
                   <h4 class="text-xl font-bold text-white">Museo Mamut Quinametzin</h4>
-                  <p class="text-gray-300 text-sm">Santa Lucía, Estado de México</p>
+                  <p class="text-slate-300 text-sm">Santa Lucía, Estado de México</p>
                 </div>
               </div>
               <div class="p-5">
