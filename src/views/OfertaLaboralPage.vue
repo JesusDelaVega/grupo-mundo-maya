@@ -25,10 +25,8 @@
           <a href="mailto:contacto@grupomundomaya.com?subject=Solicitud%20de%20Empleo%20-%20Hoteles,%20Parques%20y%20Museos" class="group relative bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors"></div>
             <div class="relative p-8">
-              <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                </svg>
+              <div class="mb-6">
+                <img src="https://grupomundomaya.com/assets/img/Hoteles,%20Parques%20y%20Museos.png" alt="Hoteles, Parques y Museos" class="h-16 object-contain" />
               </div>
               <h3 class="text-2xl font-bold text-white mb-3">Hoteles, Parques y Museos</h3>
               <p class="text-amber-100 mb-6">Únete a nuestro equipo en las unidades turísticas y culturales de Grupo Mundo Maya</p>
