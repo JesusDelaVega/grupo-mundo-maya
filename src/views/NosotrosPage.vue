@@ -201,7 +201,7 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Empresas del Grupo</h2>
         <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
           <a href="https://aifa.aero/" target="_blank" class="hover:opacity-80 transition-opacity">
-            <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-20 object-contain" />
           </a>
           <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 object-contain" />
@@ -213,10 +213,10 @@
             <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 object-contain" />
           </a>
           <a href="https://www.trenmaya.gob.mx/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
-            <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-20 object-contain" />
           </a>
           <router-link to="/servicios#aeropuertos" class="hover:opacity-80 transition-opacity">
-            <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-20 object-contain" />
           </router-link>
         </div>
       </div>
