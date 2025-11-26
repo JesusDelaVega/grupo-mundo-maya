@@ -19,24 +19,24 @@
     </section>
 
     <!-- Boletín Informativo -->
-    <section class="py-8 bg-amber-50 border-b border-amber-200">
+    <section class="py-4 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="flex items-center gap-2 px-3 py-1 bg-amber-500 text-white rounded-full text-sm font-bold">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <a href="https://grupomundomaya.com/assets/img/banner/CIERRE_TEMPORAL_DE_HOTEL_MUNDO_MAYA_EDZNA.png" target="_blank" class="group flex items-center justify-center gap-4 py-2">
+          <span class="flex items-center gap-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-bold animate-pulse">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
             </svg>
-            Boletín Informativo
+            AVISO
           </span>
-        </div>
-        <a href="https://grupomundomaya.com/assets/img/banner/CIERRE_TEMPORAL_DE_HOTEL_MUNDO_MAYA_EDZNA.png" target="_blank" class="group block">
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-            <img
-              src="https://grupomundomaya.com/assets/img/banner/CIERRE_TEMPORAL_DE_HOTEL_MUNDO_MAYA_EDZNA.png"
-              alt="Cierre Temporal de Hotel Mundo Maya Edzná"
-              class="w-full h-auto object-contain"
-            />
-          </div>
+          <span class="text-white font-bold text-sm md:text-base">
+            Cierre Temporal de Hotel Mundo Maya Edzná
+          </span>
+          <span class="flex items-center gap-1 text-white font-semibold text-sm group-hover:underline">
+            Ver más
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
         </a>
       </div>
     </section>
