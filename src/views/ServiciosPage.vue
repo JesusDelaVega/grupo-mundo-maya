@@ -741,7 +741,7 @@ const closeLightbox = () => {
             <!-- Parque Nuevo Uxmal -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/nuevo_uxmal.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
               <div class="h-44 relative overflow-hidden">
-                <img src="https://grupomundomaya.com/assets/img/museos-parques/nuevo-uxmal/nuevouxmal.jpg" alt="Parque Nuevo Uxmal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://www.gob.mx/cms/uploads/article/main_image/135581/BANNER_nuevo_uxmal.jpg" alt="Parque Nuevo Uxmal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 via-emerald-900/30 to-transparent"></div>
                 <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-emerald-700">332.99 ha</span>
                 <div class="absolute bottom-4 left-5">
