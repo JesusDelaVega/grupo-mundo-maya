@@ -22,7 +22,7 @@
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <!-- Hoteles, Parques y Museos -->
-          <a href="#" class="group relative bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+          <a href="mailto:contacto@grupomundomaya.com?subject=Solicitud%20de%20Empleo%20-%20Hoteles,%20Parques%20y%20Museos" class="group relative bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors"></div>
             <div class="relative p-8">
               <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
@@ -42,7 +42,7 @@
           </a>
 
           <!-- Aeropuertos -->
-          <a href="#" class="group relative bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+          <a href="mailto:contacto@grupomundomaya.com?subject=Solicitud%20de%20Empleo%20-%20Aeropuertos" class="group relative bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors"></div>
             <div class="relative p-8">
               <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">

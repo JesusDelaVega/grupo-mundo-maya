@@ -169,18 +169,18 @@
           <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <a href="https://mamutsantalucia.com/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/mmts.png" alt="Mamut" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <a href="https://aitulum.com/es" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 object-contain" />
           </a>
-          <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity">
+          <a href="https://www.trenmaya.gob.mx/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity">
+          <router-link to="/servicios#aeropuertos" class="hover:opacity-80 transition-opacity">
             <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 object-contain" />
-          </a>
+          </router-link>
         </div>
       </div>
     </section>

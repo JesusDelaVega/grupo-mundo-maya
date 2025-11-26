@@ -3,30 +3,35 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import './style.css'
 
+// Solo HomePage se carga de forma síncrona (primera página)
 import HomePage from './views/HomePage.vue'
-import NosotrosPage from './views/NosotrosPage.vue'
-import ServiciosPage from './views/ServiciosPage.vue'
-import NoticiasPage from './views/NoticiasPage.vue'
-import ContactoPage from './views/ContactoPage.vue'
-import TransparenciaPage from './views/TransparenciaPage.vue'
-import NormatecaPage from './views/NormatecaPage.vue'
-import InformacionPublicaPage from './views/InformacionPublicaPage.vue'
-import OfertaLaboralPage from './views/OfertaLaboralPage.vue'
-import ProteccionDatosPage from './views/ProteccionDatosPage.vue'
-import EstadosFinancierosPage from './views/EstadosFinancierosPage.vue'
-import TarifasPage from './views/TarifasPage.vue'
-// Aeropuertos
-import AeropuertoUruapan from './views/aeropuertos/AeropuertoUruapan.vue'
-import AeropuertoPuebla from './views/aeropuertos/AeropuertoPuebla.vue'
-import AeropuertoNogales from './views/aeropuertos/AeropuertoNogales.vue'
-import AeropuertoCdVictoria from './views/aeropuertos/AeropuertoCdVictoria.vue'
-import AeropuertoNuevoLaredo from './views/aeropuertos/AeropuertoNuevoLaredo.vue'
-import AeropuertoTamuin from './views/aeropuertos/AeropuertoTamuin.vue'
-import AeropuertoDelNorte from './views/aeropuertos/AeropuertoDelNorte.vue'
-import AeropuertoIxtepec from './views/aeropuertos/AeropuertoIxtepec.vue'
-import AeropuertoPalenque from './views/aeropuertos/AeropuertoPalenque.vue'
-import AeropuertoChetumal from './views/aeropuertos/AeropuertoChetumal.vue'
-import AeropuertoCampeche from './views/aeropuertos/AeropuertoCampeche.vue'
+
+// Lazy loading para el resto de páginas
+const NosotrosPage = () => import('./views/NosotrosPage.vue')
+const ServiciosPage = () => import('./views/ServiciosPage.vue')
+const NoticiasPage = () => import('./views/NoticiasPage.vue')
+const ContactoPage = () => import('./views/ContactoPage.vue')
+const TransparenciaPage = () => import('./views/TransparenciaPage.vue')
+const NormatecaPage = () => import('./views/NormatecaPage.vue')
+const InformacionPublicaPage = () => import('./views/InformacionPublicaPage.vue')
+const OfertaLaboralPage = () => import('./views/OfertaLaboralPage.vue')
+const ProteccionDatosPage = () => import('./views/ProteccionDatosPage.vue')
+const EstadosFinancierosPage = () => import('./views/EstadosFinancierosPage.vue')
+const TarifasPage = () => import('./views/TarifasPage.vue')
+const NotFoundPage = () => import('./views/NotFoundPage.vue')
+
+// Aeropuertos - lazy loading
+const AeropuertoUruapan = () => import('./views/aeropuertos/AeropuertoUruapan.vue')
+const AeropuertoPuebla = () => import('./views/aeropuertos/AeropuertoPuebla.vue')
+const AeropuertoNogales = () => import('./views/aeropuertos/AeropuertoNogales.vue')
+const AeropuertoCdVictoria = () => import('./views/aeropuertos/AeropuertoCdVictoria.vue')
+const AeropuertoNuevoLaredo = () => import('./views/aeropuertos/AeropuertoNuevoLaredo.vue')
+const AeropuertoTamuin = () => import('./views/aeropuertos/AeropuertoTamuin.vue')
+const AeropuertoDelNorte = () => import('./views/aeropuertos/AeropuertoDelNorte.vue')
+const AeropuertoIxtepec = () => import('./views/aeropuertos/AeropuertoIxtepec.vue')
+const AeropuertoPalenque = () => import('./views/aeropuertos/AeropuertoPalenque.vue')
+const AeropuertoChetumal = () => import('./views/aeropuertos/AeropuertoChetumal.vue')
+const AeropuertoCampeche = () => import('./views/aeropuertos/AeropuertoCampeche.vue')
 
 const routes = [
   { path: '/', component: HomePage },
@@ -53,6 +58,8 @@ const routes = [
   { path: '/aeropuertos/palenque', component: AeropuertoPalenque },
   { path: '/aeropuertos/chetumal', component: AeropuertoChetumal },
   { path: '/aeropuertos/campeche', component: AeropuertoCampeche },
+  // 404 - debe ser la última ruta
+  { path: '/:pathMatch(.*)*', component: NotFoundPage },
 ]
 
 const router = createRouter({

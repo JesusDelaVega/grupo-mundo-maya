@@ -1293,16 +1293,16 @@ const closeLightbox = () => {
           <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 md:h-20 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <a href="https://mamutsantalucia.com/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/mmts.png" alt="Mamut" class="h-20 md:h-24 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <a href="https://aitulum.com/es" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 md:h-20 object-contain" />
           </a>
-          <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <a href="https://www.trenmaya.gob.mx/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 md:h-20 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <a href="#aeropuertos" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 md:h-20 object-contain" />
           </a>
         </div>

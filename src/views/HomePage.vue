@@ -84,15 +84,15 @@ onMounted(() => {
           <a href="https://mamutsantalucia.com/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://mamutsantalucia.com/assets/images/logotipo.png" alt="Mamut" class="h-14 object-contain" style="filter: invert(1);" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <a href="https://aitulum.com/es" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-14 object-contain" />
           </a>
           <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-14 object-contain" />
           </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+          <router-link to="/servicios#aeropuertos" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
             <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-14 object-contain" />
-          </a>
+          </router-link>
         </div>
       </div>
     </section>
@@ -279,7 +279,7 @@ onMounted(() => {
           <!-- Aeropuertos Map Card -->
           <router-link to="/servicios#aeropuertos" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-sky-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA AROPUERTOS JIG_NOMBRES_130625.png" alt="Mapa de Aeropuertos" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA AROPUERTOS JIG_NOMBRES_130625.png" alt="Mapa de Aeropuertos" loading="lazy" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -297,7 +297,7 @@ onMounted(() => {
           <!-- Hoteles Map Card -->
           <router-link to="/servicios#turismo" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-amber-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA HOTELES_Y PARQUES_110625 sin iconos.png" alt="Mapa de Hoteles y Parques" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA HOTELES_Y PARQUES_110625 sin iconos.png" alt="Mapa de Hoteles y Parques" loading="lazy" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -315,7 +315,7 @@ onMounted(() => {
           <!-- Combustibles Map Card -->
           <router-link to="/servicios#combustibles" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-emerald-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de Combustibles" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de Combustibles" loading="lazy" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">

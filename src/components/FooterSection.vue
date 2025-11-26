@@ -25,7 +25,7 @@
             <h4 class="font-semibold text-[#10312B] mb-4">Sitios relacionados</h4>
             <ul class="space-y-3 text-sm">
               <li>
-                <a href="https://aifa.aero/" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://aifa.aero/" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -33,7 +33,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.gob.mx/grupoolmecamayamexica" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://www.gob.mx/grupoolmecamayamexica" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -48,7 +48,7 @@
             <h4 class="font-semibold text-[#10312B] mb-4">Enlaces</h4>
             <ul class="space-y-3 text-sm">
               <li>
-                <a href="https://www.gob.mx/grupoolmecamayamexica/archivo/prensa?idiom=es" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://www.gob.mx/grupoolmecamayamexica/archivo/prensa?idiom=es" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -56,7 +56,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.gob.mx/publicaciones" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://www.gob.mx/publicaciones" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -64,7 +64,7 @@
                 </a>
               </li>
               <li>
-                <a href="http://www.ordenjuridico.gob.mx" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="http://www.ordenjuridico.gob.mx" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -72,7 +72,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -80,7 +80,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://alertadores.funcionpublica.gob.mx" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://alertadores.funcionpublica.gob.mx" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
@@ -88,7 +88,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://sidec.funcionpublica.gob.mx/#!/" target="_blank" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
+                <a href="https://sidec.funcionpublica.gob.mx/#!/" target="_blank" rel="noopener noreferrer" class="text-[#10312B] hover:text-sky-600 transition-colors flex items-center gap-2">
                   <svg class="w-4 h-4 text-[#10312B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
