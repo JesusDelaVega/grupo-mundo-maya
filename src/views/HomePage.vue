@@ -32,22 +32,6 @@ onMounted(() => {
     y: 20,
     duration: 0.6
   }, '-=0.4')
-
-  // Animación parallax suave en elementos decorativos
-  gsap.to('.parallax-blob-1', {
-    y: -50,
-    duration: 3,
-    repeat: -1,
-    yoyo: true,
-    ease: 'sine.inOut'
-  })
-  gsap.to('.parallax-blob-2', {
-    y: 50,
-    duration: 4,
-    repeat: -1,
-    yoyo: true,
-    ease: 'sine.inOut'
-  })
 })
 </script>
 
@@ -56,19 +40,15 @@ onMounted(() => {
     <!-- Hero Section -->
     <section ref="heroRef" class="relative min-h-screen flex items-center bg-gradient-to-br from-sky-900 via-sky-800 to-slate-900 overflow-hidden">
       <div class="absolute inset-0 bg-black/30"></div>
-      <!-- Decorative elements con parallax -->
-      <div class="parallax-blob-1 absolute top-20 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl"></div>
-      <div class="parallax-blob-2 absolute bottom-20 right-10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
-
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
-        <div class="max-w-3xl mx-auto text-center">
-          <!-- Logo SEDENA blanco -->
-          <div ref="logoRef" class="flex items-center justify-center gap-3 mb-4">
-            <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-10" style="filter: brightness(0) invert(1);" />
+        <div class="max-w-5xl mx-auto text-center">
+          <!-- Logo SEDENA 2024 -->
+          <div ref="logoRef" class="flex items-center justify-center mb-6">
+            <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="2024 SEDENA GAFSACOMM" class="h-52" style="filter: brightness(0) invert(1);" />
           </div>
-          <!-- Slogan Mundo Maya - MÁS GRANDE -->
+          <!-- Slogan - pequeño, 1/4 del tamaño -->
           <div ref="sloganRef" class="mb-8 flex justify-center">
-            <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-40 md:h-52 lg:h-60" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/Unimos el cielo y la tierra eslogan.png" alt="Unimos el cielo y la tierra" class="h-12 md:h-14 lg:h-16" />
           </div>
           <p ref="textRef" class="text-xl text-sky-100 mb-8 leading-relaxed">
             Administramos y operamos infraestructura estratégica nacional: aeropuertos, hoteles y servicios de combustible para el desarrollo de México.
@@ -94,64 +74,25 @@ onMounted(() => {
     <!-- Marcas/Subsidiarias -->
     <section class="py-12 bg-white border-b border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        <div class="flex flex-wrap items-center justify-center gap-10 md:gap-14">
           <a href="https://aifa.aero/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/LOGO VECTOR.png" alt="AIFA" class="h-14 object-contain" />
           </a>
           <a href="https://www.mexicana.com/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/mexicanaaz.png" alt="Mexicana" class="h-14 object-contain" />
+          </a>
+          <a href="https://mamutsantalucia.com/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
+            <img src="https://mamutsantalucia.com/assets/images/logotipo.png" alt="Mamut" class="h-14 object-contain" style="filter: invert(1);" />
           </a>
           <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/mmts.png" alt="Mamut" class="h-16 object-contain" />
-          </a>
-          <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/Copia de Versión vertical en color 4.png" alt="AI Tulum" class="h-14 object-contain" />
           </a>
           <a href="https://www.trenmaya.gob.mx/" target="_blank" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/trnmy.png" alt="Tren Maya" class="h-14 object-contain" />
           </a>
           <a href="#" class="hover:opacity-80 transition-opacity hover:scale-105 transform duration-300">
-            <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-16 object-contain" />
+            <img src="https://grupomundomaya.com/assets/img/Botones/logoaero.png" alt="Aeropuertos" class="h-14 object-contain" />
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Nosotros Section -->
-    <section class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Nosotros</span>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Comprometidos con México</h2>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Misión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-20 h-20 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_mision.png" alt="Misión" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Misión</h3>
-            <p class="text-gray-600 leading-relaxed">Administrar, controlar, supervisar, operar y explotar bienes nacionales bajo la rectoría del Estado, contribuyendo al bienestar social y desarrollo económico.</p>
-          </div>
-
-          <!-- Visión -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-20 h-20 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_vision.png" alt="Visión" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Visión</h3>
-            <p class="text-gray-600 leading-relaxed">Ser reconocidos como la Entidad Paraestatal más importante de México, referente de excelencia en las diversas actividades económicas.</p>
-          </div>
-
-          <!-- Objetivo -->
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow text-center">
-            <div class="w-20 h-20 mx-auto mb-6">
-              <img src="https://grupomundomaya.com/assets/img/img_objetivo.png" alt="Objetivo" class="w-full h-full object-contain" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Objetivo</h3>
-            <p class="text-gray-600 leading-relaxed">Contribuir al Desarrollo Nacional mediante estrategias orientadas a la mejora continua de las actividades económicas del grupo.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -160,32 +101,37 @@ onMounted(() => {
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Nuestros Servicios</span>
+          <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-4">Nuestros Servicios</span>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Infraestructura para México</h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">Operamos tres pilares fundamentales que conectan y fortalecen la economía nacional.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Turismo -->
-          <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100">
-            <div class="h-56 bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all"></div>
-              <svg class="w-20 h-20 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <div class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
+            <div class="h-56 relative overflow-hidden bg-gradient-to-br from-amber-500 to-amber-600">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <img src="https://grupomundomaya.com/assets/img/icono hoteles.png" alt="Hoteles" class="w-24 h-24 opacity-90" />
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span class="text-white font-bold text-xl">6 Hoteles</span>
+              </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-3">Servicios Turísticos</h3>
-              <p class="text-gray-600 mb-4">6 hoteles temáticos en zonas arqueológicas: Palenque, Edzná, Nuevo Uxmal, Chichén Itzá, Tulum y Calakmul.</p>
+              <p class="text-gray-600 mb-4">Hoteles temáticos en zonas arqueológicas: Palenque, Edzná, Nuevo Uxmal, Chichén Itzá, Tulum y Calakmul.</p>
               <ul class="space-y-2 text-sm text-gray-500 mb-6">
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-amber-500 rotate-45"></div>
                   4 Parques y Museos
                 </li>
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-amber-500 rotate-45"></div>
                   Experiencias culturales
                 </li>
               </ul>
-              <router-link to="/servicios" class="text-amber-600 font-semibold flex items-center group-hover:text-amber-700">
+              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-amber-500 text-white rounded-lg font-semibold hover:bg-amber-600 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
@@ -193,25 +139,30 @@ onMounted(() => {
           </div>
 
           <!-- Aeropuertos -->
-          <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100">
-            <div class="h-56 bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all"></div>
-              <svg class="w-20 h-20 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <div class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
+            <div class="h-56 relative overflow-hidden bg-gradient-to-br from-sky-500 to-sky-600">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <img src="https://grupomundomaya.com/assets/img/iconavion.png" alt="Avión" class="w-24 h-24 opacity-90" />
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span class="text-white font-bold text-xl">12 Aeropuertos</span>
+              </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-3">Aeropuertos</h3>
-              <p class="text-gray-600 mb-4">12 terminales aéreas incluyendo AIFA, Tulum, Chetumal, Palenque, Campeche y más.</p>
+              <p class="text-gray-600 mb-4">Terminales aéreas incluyendo AIFA, Tulum, Chetumal, Palenque, Campeche y más.</p>
               <ul class="space-y-2 text-sm text-gray-500 mb-6">
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-sky-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-sky-500 rotate-45"></div>
                   AIFA Felipe Ángeles
                 </li>
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-sky-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-sky-500 rotate-45"></div>
                   Mexicana de Aviación
                 </li>
               </ul>
-              <router-link to="/servicios" class="text-sky-600 font-semibold flex items-center group-hover:text-sky-700">
+              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-sky-600 text-white rounded-lg font-semibold hover:bg-sky-700 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
@@ -219,25 +170,30 @@ onMounted(() => {
           </div>
 
           <!-- Combustibles -->
-          <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100">
-            <div class="h-56 bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center relative overflow-hidden">
-              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all"></div>
-              <svg class="w-20 h-20 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div class="group bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
+            <div class="h-56 relative overflow-hidden bg-gradient-to-br from-emerald-500 to-emerald-600">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <img src="https://grupomundomaya.com/assets/img/iconcombustibles.png" alt="Combustibles" class="w-24 h-24 opacity-90" />
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <span class="text-white font-bold text-xl">11 Puntos</span>
+              </div>
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-3">Combustibles</h3>
-              <p class="text-gray-600 mb-4">11 puntos de distribución estratégica de combustible de aviación a nivel nacional.</p>
+              <p class="text-gray-600 mb-4">Distribución estratégica de combustible de aviación a nivel nacional.</p>
               <ul class="space-y-2 text-sm text-gray-500 mb-6">
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-emerald-500 rotate-45"></div>
                   Logística eficiente
                 </li>
                 <li class="flex items-center gap-2">
-                  <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <div class="w-2 h-2 bg-emerald-500 rotate-45"></div>
                   Cobertura nacional
                 </li>
               </ul>
-              <router-link to="/servicios" class="text-emerald-600 font-semibold flex items-center group-hover:text-emerald-700">
+              <router-link to="/servicios" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
                 Ver más
                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               </router-link>
@@ -248,19 +204,19 @@ onMounted(() => {
     </section>
 
     <!-- Mapa de Ubicaciones -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Cobertura Nacional</span>
+          <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-4">Cobertura Nacional</span>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Presencia en Todo México</h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">Infraestructura estratégica distribuida en los puntos más importantes del país.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Aeropuertos Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <router-link to="/servicios#aeropuertos" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-sky-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA AROPUERTOS JIG_NOMBRES_130625.png" alt="Mapa de Aeropuertos" class="w-full h-full object-contain" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA AROPUERTOS JIG_NOMBRES_130625.png" alt="Mapa de Aeropuertos" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -268,13 +224,17 @@ onMounted(() => {
                 12 Aeropuertos
               </h3>
               <p class="text-gray-600 text-sm">Nogales, Nuevo Laredo, Cd. Victoria, Tamuín, Uruapan, Puebla, Ixtepec, Palenque, Campeche, Chetumal, Tulum, Del Norte</p>
+              <span class="inline-flex items-center text-sky-600 font-medium text-sm mt-3 group-hover:text-sky-700">
+                Ver más
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </span>
             </div>
-          </div>
+          </router-link>
 
           <!-- Hoteles Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <router-link to="/servicios#turismo" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-amber-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA HOTELES_Y PARQUES_110625 sin iconos.png" alt="Mapa de Hoteles y Parques" class="w-full h-full object-contain" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA HOTELES_Y PARQUES_110625 sin iconos.png" alt="Mapa de Hoteles y Parques" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -282,13 +242,17 @@ onMounted(() => {
                 6 Hoteles + 4 Parques
               </h3>
               <p class="text-gray-600 text-sm">Palenque, Edzná, Nuevo Uxmal, Chichén Itzá, Tulum, Calakmul y parques temáticos</p>
+              <span class="inline-flex items-center text-amber-600 font-medium text-sm mt-3 group-hover:text-amber-700">
+                Ver más
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </span>
             </div>
-          </div>
+          </router-link>
 
           <!-- Combustibles Map Card -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+          <router-link to="/servicios#combustibles" class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer block">
             <div class="h-56 bg-emerald-50 flex items-center justify-center p-4">
-              <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de Combustibles" class="w-full h-full object-contain" />
+              <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de Combustibles" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-6">
               <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -296,18 +260,22 @@ onMounted(() => {
                 11 Puntos de Combustible
               </h3>
               <p class="text-gray-600 text-sm">Distribución estratégica de combustible de aviación en ubicaciones clave</p>
+              <span class="inline-flex items-center text-emerald-600 font-medium text-sm mt-3 group-hover:text-emerald-700">
+                Ver más
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </span>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </section>
 
-    <!-- Timeline -->
-    <section class="py-20 bg-white">
+    <!-- Timeline - Estilo Maya Animado -->
+    <section class="py-24 bg-gradient-to-br from-slate-50 to-amber-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium mb-4">Nuestra Historia</span>
+            <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-4 border border-amber-200">Nuestra Historia</span>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Impulsando el desarrollo de México</h2>
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
               Grupo Mundo Maya es una entidad paraestatal mexicana establecida el 13 de abril de 2022, cuya misión es administrar infraestructura estratégica nacional bajo dirección estatal.
@@ -315,48 +283,73 @@ onMounted(() => {
             <p class="text-lg text-gray-600 mb-8 leading-relaxed">
               Contribuimos activamente al bienestar social y desarrollo económico del país a través de la gestión eficiente de aeropuertos, hoteles y servicios de combustible.
             </p>
-            <router-link to="/nosotros" class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors">
+            <router-link to="/nosotros" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5">
               Conocer Nuestra Historia
               <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </router-link>
           </div>
 
-          <div class="bg-gradient-to-br from-sky-900 to-slate-900 rounded-3xl p-8 text-white">
-            <h3 class="text-xl font-bold mb-8 flex items-center">
-              <svg class="w-6 h-6 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              Línea del Tiempo
-            </h3>
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-amber-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-amber-400 text-sm font-medium">10 Febrero 2022</div>
-                  <div class="font-semibold">Anuncio de Creación</div>
-                  <div class="text-sky-200 text-sm">El Presidente anuncia la creación de la entidad</div>
+          <div class="relative">
+            <!-- Card con estilo Maya -->
+            <div class="bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 rounded-3xl p-8 text-white border border-amber-500/20 shadow-2xl">
+              <!-- Decoración superior -->
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 rounded-t-3xl"></div>
+
+              <h3 class="text-xl font-bold mb-8 flex items-center">
+                <div class="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-sky-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-sky-400 text-sm font-medium">13 Abril 2022</div>
-                  <div class="font-semibold">Constitución Oficial</div>
-                  <div class="text-sky-200 text-sm">Publicación en el Diario Oficial de la Federación</div>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-emerald-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-emerald-400 text-sm font-medium">2022-2024</div>
-                  <div class="font-semibold">Expansión y Consolidación</div>
-                  <div class="text-sky-200 text-sm">Integración de aeropuertos y servicios turísticos</div>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-purple-400 rounded-full mt-2 mr-4 animate-pulse flex-shrink-0"></div>
-                <div>
-                  <div class="text-purple-400 text-sm font-medium">2025</div>
-                  <div class="font-semibold">Crecimiento Continuo</div>
-                  <div class="text-sky-200 text-sm">12 aeropuertos, 6 hoteles, 11 puntos de combustible</div>
+                Línea del Tiempo
+              </h3>
+
+              <!-- Timeline con línea vertical -->
+              <div class="relative">
+                <!-- Línea vertical -->
+                <div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-gradient-to-b from-amber-400 via-sky-400 to-amber-400"></div>
+
+                <div class="space-y-8">
+                  <!-- Evento 1 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-amber-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-amber-400/30">
+                      <div class="text-amber-400 text-sm font-bold">10 Febrero 2022</div>
+                      <div class="font-semibold text-lg">Anuncio de Creación</div>
+                      <div class="text-sky-200 text-sm">El Presidente anuncia la creación de la entidad</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 2 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-sky-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-sky-400/30">
+                      <div class="text-sky-400 text-sm font-bold">13 Abril 2022</div>
+                      <div class="font-semibold text-lg">Constitución Oficial</div>
+                      <div class="text-sky-200 text-sm">Publicación en el Diario Oficial de la Federación</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 3 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-emerald-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-emerald-400/30">
+                      <div class="text-emerald-400 text-sm font-bold">2022-2024</div>
+                      <div class="font-semibold text-lg">Expansión y Consolidación</div>
+                      <div class="text-sky-200 text-sm">Integración de aeropuertos y servicios turísticos</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 4 - Actual -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-amber-400 rounded-full border-4 border-slate-900 animate-pulse"></div>
+                    <div class="bg-amber-500/10 rounded-xl p-4 flex-1 border border-amber-400/30">
+                      <div class="text-amber-400 text-sm font-bold flex items-center gap-2">
+                        2025
+                        <span class="px-2 py-0.5 bg-amber-400 text-slate-900 text-xs rounded-full font-bold">ACTUAL</span>
+                      </div>
+                      <div class="font-semibold text-lg">Crecimiento Continuo</div>
+                      <div class="text-sky-200 text-sm">12 aeropuertos, 6 hoteles, 11 puntos de combustible</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
