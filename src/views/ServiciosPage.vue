@@ -356,21 +356,86 @@ const closeLightbox = () => {
             </a>
           </div>
 
-          <!-- Otros Aeropuertos -->
-          <h4 class="text-lg font-semibold text-gray-700 mb-4">Otros aeropuertos de la red</h4>
-          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Cd. Victoria</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Tamuín</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Uruapan</span>
-            </div>
-            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
-              <span class="text-sm font-medium text-sky-800">Puebla</span>
-            </div>
+          <!-- Más Aeropuertos -->
+          <h4 class="text-lg font-semibold text-gray-700 mb-4 mt-10">Más aeropuertos de la red</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <!-- Ciudad Victoria -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_cd-victoria.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono text-gray-400">CVM / MMCV</span>
+                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+              </div>
+              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Gral. Pedro José Méndez</h5>
+              <p class="text-sm text-gray-500 mb-3">Ciudad Victoria, Tamaulipas</p>
+              <div class="space-y-1 text-xs text-gray-500">
+                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">388.70 ha</span></div>
+                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">2,200 m</span></div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex gap-1">
+                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">PROFEPA</span>
+                <span class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">ACA-1</span>
+              </div>
+            </a>
+
+            <!-- Puebla -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_puebla.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono text-gray-400">PBC / MMPB</span>
+                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+              </div>
+              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Hermanos Serdán</h5>
+              <p class="text-sm text-gray-500 mb-3">Puebla (Huejotzingo)</p>
+              <div class="space-y-1 text-xs text-gray-500">
+                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">518.1 ha</span></div>
+                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">3,605 m</span></div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-1">
+                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                <span class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded text-xs">ACA-1</span>
+                <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+              </div>
+            </a>
+
+            <!-- Uruapan -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_uruapan.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono text-gray-400">UPN / MMPN</span>
+                <span class="px-2 py-0.5 bg-sky-100 text-sky-700 rounded text-xs">Internacional</span>
+              </div>
+              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Lic. Ignacio López Rayón</h5>
+              <p class="text-sm text-gray-500 mb-3">Uruapan, Michoacán</p>
+              <div class="space-y-1 text-xs text-gray-500">
+                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">263.8 ha</span></div>
+                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">2,400 m</span></div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex gap-1">
+                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">AFAC</span>
+                <span class="px-1.5 py-0.5 bg-green-50 text-green-700 rounded text-xs">PROFEPA</span>
+                <span class="px-1.5 py-0.5 bg-purple-50 text-purple-700 rounded text-xs">Volaris</span>
+              </div>
+            </a>
+
+            <!-- Tamuín -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_tamuin.html" target="_blank" class="group bg-white border border-gray-200 rounded-xl p-5 hover:shadow-lg hover:border-sky-300 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono text-gray-400">TSL / MMTN</span>
+                <span class="px-2 py-0.5 bg-gray-100 text-gray-700 rounded text-xs">Regional</span>
+              </div>
+              <h5 class="font-bold text-gray-900 group-hover:text-sky-600 transition-colors">Aeropuerto de Tamuín</h5>
+              <p class="text-sm text-gray-500 mb-3">Tamuín, San Luis Potosí</p>
+              <div class="space-y-1 text-xs text-gray-500">
+                <div class="flex justify-between"><span>Superficie:</span><span class="font-medium text-gray-700">122.52 ha</span></div>
+                <div class="flex justify-between"><span>Pista:</span><span class="font-medium text-gray-700">1,405 m</span></div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100">
+                <span class="text-xs text-gray-400">Hub regional de negocios</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Resto de Aeropuertos -->
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
             <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
               <span class="text-sm font-medium text-sky-800">Ixtepec</span>
             </div>
@@ -690,6 +755,401 @@ const closeLightbox = () => {
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- Combustibles -->
+    <section id="combustibles" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center">
+              <img src="https://grupomundomaya.com/assets/img/iconcombustibles.png" alt="" class="w-8 h-8" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">Combustibles de Aviación</h3>
+              <p class="text-gray-500">11 estaciones de suministro • Turbosina y Gasavión</p>
+            </div>
+          </div>
+          <a href="mailto:facturacionhidrocarburos@gafsacomm.com" class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-colors">
+            Contactar para suministro
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Info Banner -->
+        <div class="bg-emerald-50 rounded-2xl p-6 mb-8">
+          <div class="flex flex-col md:flex-row md:items-center gap-4">
+            <div class="flex-1">
+              <p class="text-sm font-medium text-emerald-800 mb-2">Operador: GAFSACOMM</p>
+              <p class="text-emerald-700 text-sm">Grupo Aeroportuario, Ferroviario, de Servicios Auxiliares y Conexos Olmeca-Maya-Mexica, S.A. de C.V.</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-emerald-700">Turbosina</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-emerald-700">Gasavión</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-emerald-700">Servicio Aeroportuario</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Estaciones -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Nogales -->
+          <a href="https://grupomundomaya.com/combustibles/nogales.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">NOG</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Nogales</h4>
+                <p class="text-emerald-100 text-sm">Sonora</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">km 13.5 Carretera Internacional Nogales, C.P. 84000</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  <span>1 tanque: 60,000 L</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Nuevo Laredo -->
+          <a href="https://grupomundomaya.com/combustibles/nuevo_laredo.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">NLD</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Nuevo Laredo</h4>
+                <p class="text-emerald-100 text-sm">Tamaulipas</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Carretera Piedras Negras km 5, C.P. 88000</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  <span>5 tanques: 300,000 L total</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Ciudad Victoria -->
+          <a href="https://grupomundomaya.com/combustibles/cd_victoria.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">CVM</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Cd. Victoria</h4>
+                <p class="text-emerald-100 text-sm">Tamaulipas</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Carretera a Soto la Marina km. 18.5, Güemez</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  <span>Turbosina: 280,000 L • Gasavión: 70,000 L</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <div class="flex gap-1">
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                  <span class="px-2 py-1 bg-sky-50 text-sky-700 rounded text-xs">Gasavión</span>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Tamuín -->
+          <a href="https://grupomundomaya.com/combustibles/tamuin.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">TSL</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Tamuín</h4>
+                <p class="text-emerald-100 text-sm">San Luis Potosí</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Aeropuerto Internacional Tamuín, Carretera estación de Palmas KM 5</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7:00 - 19:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>Aeropuerto Internacional</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Uruapan -->
+          <a href="https://grupomundomaya.com/combustibles/uruapan.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">UPN</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Uruapan</h4>
+                <p class="text-emerald-100 text-sm">Michoacán</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Av. Latinoamericana S/N, Fracc. San José Obrero, C.P. 60160</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  <span>3 tanques: 240,000 L total</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Puebla -->
+          <a href="https://grupomundomaya.com/combustibles/puebla.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">PBC</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Puebla</h4>
+                <p class="text-emerald-100 text-sm">Puebla</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Aeropuerto Internacional "Hermanos Serdán", Carretera Federal México-Puebla km 91.5</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7:00 - 19:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>Aeropuerto Internacional</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <div class="flex gap-1">
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                  <span class="px-2 py-1 bg-sky-50 text-sky-700 rounded text-xs">Gasavión</span>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Ixtepec -->
+          <a href="https://grupomundomaya.com/combustibles/ixtepec.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">IZT</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Cd. Ixtepec</h4>
+                <p class="text-emerald-100 text-sm">Oaxaca</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Carretera Panamericana Juchitán-Tehuantepec, km 264, Base Aérea Militar No. 2</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  <span>Base Aérea Militar</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Palenque -->
+          <a href="https://grupomundomaya.com/combustibles/palenque.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">PQM</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Palenque</h4>
+                <p class="text-emerald-100 text-sm">Chiapas</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Aeropuerto Internacional de Palenque, Carretera Catazajá rancho nuevo km. 24.5</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7:00 - 19:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>Aeropuerto Internacional</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Campeche -->
+          <a href="https://grupomundomaya.com/combustibles/campeche.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">CPE</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Campeche</h4>
+                <p class="text-emerald-100 text-sm">Campeche</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Av. López Portillo X Carretera Campeche-China S/N, Colonia Aviación</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Lun-Vie 9:00 - 16:00</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  <span>Turbosina: 160,000 L • Gasavión: 60,000 L</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <div class="flex gap-1">
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                  <span class="px-2 py-1 bg-sky-50 text-sky-700 rounded text-xs">Gasavión</span>
+                </div>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Chetumal -->
+          <a href="https://grupomundomaya.com/combustibles/chetumal.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-white/20 rounded-full text-xs font-semibold text-white font-mono">CTM</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Chetumal</h4>
+                <p class="text-emerald-100 text-sm">Quintana Roo</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Aeropuerto Internacional de Chetumal, Prolongación Av. Revolución 660, Col. Industrial</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7:00 - 19:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>Aeropuerto Internacional</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Tulum -->
+          <a href="https://grupomundomaya.com/combustibles/tulum.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div class="h-24 bg-gradient-to-br from-emerald-600 to-emerald-800 p-4 relative">
+              <span class="absolute top-3 right-3 px-2 py-1 bg-amber-500 rounded-full text-xs font-semibold text-white">Nuevo</span>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-lg font-bold text-white group-hover:text-emerald-200 transition-colors">Combustibles Tulum</h4>
+                <p class="text-emerald-100 text-sm">Quintana Roo</p>
+              </div>
+            </div>
+            <div class="p-4">
+              <p class="text-gray-600 text-sm mb-3 line-clamp-2">Carretera Federal 307 Km.201, ejido de Chunyaxche, Felipe Carrillo Puerto</p>
+              <div class="space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>7:00 - 19:00 hrs</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-500">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>Aeropuerto Internacional Tulum</span>
+                </div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between">
+                <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Turbosina</span>
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-emerald-500 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Mapa de combustibles -->
+        <div class="mt-10 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6">
+          <div
+            @click="openLightbox('https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png', 'Red de Combustibles')"
+            class="w-full md:w-1/2 max-w-md cursor-pointer group"
+          >
+            <img src="https://grupomundomaya.com/assets/img/MAPA COMB_GMM_SIN NOMB.png" alt="Mapa de combustibles" class="w-full rounded-xl shadow-lg group-hover:shadow-2xl transition-all" />
+            <p class="text-center text-sm text-emerald-600 mt-2 group-hover:text-emerald-700">Clic para ampliar</p>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-xl font-bold text-gray-900 mb-3">Red Nacional de Combustibles de Aviación</h4>
+            <p class="text-gray-600 mb-4">11 estaciones estratégicamente ubicadas para garantizar el suministro de turbosina y gasavión en los principales aeropuertos del país.</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Operación en aeropuertos internacionales</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Servicio a aerolíneas comerciales y privadas</span>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span>Facturación electrónica disponible</span>
+              </div>
+            </div>
+            <a href="mailto:facturacionhidrocarburos@gafsacomm.com" class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-colors text-sm">
+              Solicitar cotización
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
