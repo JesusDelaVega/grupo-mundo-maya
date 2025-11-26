@@ -557,7 +557,7 @@ const closeLightbox = () => {
         </div>
 
         <!-- Parques y Museos -->
-        <div>
+        <div id="turismo">
           <div class="flex items-center gap-4 mb-8">
             <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center">
               <img src="https://grupomundomaya.com/assets/img/icono parques.png" alt="" class="w-8 h-8" />
@@ -567,19 +567,126 @@ const closeLightbox = () => {
               <p class="text-gray-500">Espacios culturales y recreativos</p>
             </div>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Museo del Mamut</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Museo Quinametzin</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Museo Ferrocarriles</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Parques Temáticos</span>
-            </div>
+
+          <!-- Parques Destacados -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Parque Nuevo Uxmal -->
+            <a href="https://grupomundomaya.com/servicios-turisticos/parques/nuevo_uxmal.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="h-40 bg-gradient-to-br from-emerald-500 to-emerald-700 p-5 relative">
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">332.99 ha</span>
+                <div class="absolute bottom-4 left-5">
+                  <h4 class="text-xl font-bold text-white">Parque Nuevo Uxmal</h4>
+                  <p class="text-emerald-100 text-sm">Santa Elena, Yucatán</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-gray-600 text-sm mb-4">Portal de entrada a la impresionante Ruta Maya con arquitectura del Clásico Tardío (800-1000 d.C.).</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Lun-Dom 8:00 - 17:00</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                    <span>Observatorio astronómico</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Camping</span>
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Senderismo</span>
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Ciclismo</span>
+                  <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded text-xs">Rituales Mayas</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Parque La Plancha -->
+            <a href="https://grupomundomaya.com/servicios-turisticos/parques/la_plancha.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="h-40 bg-gradient-to-br from-purple-500 to-purple-700 p-5 relative">
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">20 ha</span>
+                <div class="absolute bottom-4 left-5">
+                  <h4 class="text-xl font-bold text-white">Parque La Plancha</h4>
+                  <p class="text-purple-100 text-sm">Centro de Mérida, Yucatán</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-gray-600 text-sm mb-4">Antigua Estación Central del Ferrocarril (1920-1974) transformada en espacio recreativo y cultural.</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span>Lun-Dom 7:00 - 23:00</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                    <span>Calle 47, esq. Av. 1o de Mayo</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-purple-50 text-purple-700 rounded text-xs">Anfiteatro</span>
+                  <span class="px-2 py-1 bg-purple-50 text-purple-700 rounded text-xs">Skatepark</span>
+                  <span class="px-2 py-1 bg-purple-50 text-purple-700 rounded text-xs">300+ estacionamientos</span>
+                  <span class="px-2 py-1 bg-purple-50 text-purple-700 rounded text-xs">Pet Friendly</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Parque del Jaguar -->
+            <a href="https://grupomundomaya.com/servicios-turisticos/parques/jaguar.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="h-40 bg-gradient-to-br from-amber-500 to-amber-700 p-5 relative">
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">13.5 ha</span>
+                <div class="absolute bottom-4 left-5">
+                  <h4 class="text-xl font-bold text-white">Parque del Jaguar</h4>
+                  <p class="text-amber-100 text-sm">Tulum, Quintana Roo</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-gray-600 text-sm mb-4">Experiencia entre relajación y aventura a 2.6 km de la Zona Arqueológica de Tulum.</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                    <span>Conectado con Hotel Tulum</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    <span>Tren Maya: 3.8 km</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs">Pueblo Mágico</span>
+                  <span class="px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs">Ecoturismo</span>
+                  <span class="px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs">Aventura</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Museo Mamut Santa Lucía -->
+            <a href="https://mamutsantalucia.com/" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="h-40 bg-gradient-to-br from-slate-700 to-slate-900 p-5 relative">
+                <span class="absolute top-4 right-4 px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Paleontología</span>
+                <div class="absolute bottom-4 left-5">
+                  <h4 class="text-xl font-bold text-white">Museo Mamut Quinametzin</h4>
+                  <p class="text-gray-300 text-sm">Santa Lucía, Estado de México</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-gray-600 text-sm mb-4">Museo Paleontológico de Santa Lucía con hallazgos de mamuts y fauna del Pleistoceno.</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    <span>Junto al AIFA</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-500">
+                    <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    <span>Excavaciones activas</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Mamuts</span>
+                  <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Fósiles</span>
+                  <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Pleistoceno</span>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
