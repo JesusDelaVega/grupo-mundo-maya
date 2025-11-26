@@ -263,42 +263,128 @@ const closeLightbox = () => {
               <p class="text-gray-500">12 terminales aéreas a nivel nacional</p>
             </div>
           </div>
+
+          <!-- Aeropuertos Destacados -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Tulum -->
+            <a href="https://aitulum.com/es" target="_blank" class="group bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
+                  <span class="text-white/80 text-sm font-mono">TQO</span>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors">Aeropuerto Internacional de Tulum</h4>
+                <p class="text-sky-100 text-sm mb-4">Felipe Carrillo Puerto • Quintana Roo</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-sky-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                    <span>Conectado con Tren Maya</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-sky-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    <span>Operador: GAFSACOMM</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
+                  <span class="text-white text-sm font-medium">Ver vuelos y horarios</span>
+                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Nuevo Laredo -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nuevo_laredo.html" target="_blank" class="group bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
+                  <span class="text-white/80 text-sm font-mono">NLD / MMNL</span>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-amber-200 transition-colors">Aeropuerto Internacional Quetzalcóatl</h4>
+                <p class="text-gray-300 text-sm mb-4">Nuevo Laredo • Tamaulipas</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-gray-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                    <span>299.84 hectáreas</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    <span>Pista: 2,000 m × 45 m</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-gray-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                    <span>7 km de Nuevo Laredo</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
+                  <div class="flex gap-2">
+                    <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">AFAC</span>
+                    <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">PROFEPA</span>
+                  </div>
+                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </div>
+              </div>
+            </a>
+
+            <!-- Nogales -->
+            <a href="https://grupomundomaya.com/aeropuertos/aeropuerto_nogales.html" target="_blank" class="group bg-gradient-to-br from-amber-600 to-amber-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-4">
+                  <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Internacional</span>
+                  <span class="text-white/80 text-sm font-mono">NOG / MMNG</span>
+                </div>
+                <h4 class="text-xl font-bold text-white mb-2 group-hover:text-amber-200 transition-colors">Aeropuerto Internacional de Nogales</h4>
+                <p class="text-amber-100 text-sm mb-4">Nogales • Sonora</p>
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-amber-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+                    <span>108.6 hectáreas</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-amber-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    <span>Pista: 1,800 m</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-amber-200">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                    <span>13.5 km de Nogales</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-white/20 flex items-center justify-between">
+                  <span class="text-white/80 text-xs">Frontera con Arizona, EE.UU.</span>
+                  <svg class="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Otros Aeropuertos -->
+          <h4 class="text-lg font-semibold text-gray-700 mb-4">Otros aeropuertos de la red</h4>
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Nogales</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Cd. Victoria</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Nuevo Laredo</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Tamuín</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Cd. Victoria</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Uruapan</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Tamuín</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Puebla</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Uruapan</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Ixtepec</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Puebla</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Palenque</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Ixtepec</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Campeche</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Palenque</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Chetumal</span>
             </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Campeche</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Chetumal</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Tulum</span>
-            </div>
-            <div class="bg-white rounded-xl p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <span class="text-sm font-medium text-gray-700">Del Norte</span>
+            <div class="bg-sky-50 border border-sky-100 rounded-xl p-4 text-center hover:shadow-md hover:bg-sky-100 transition-all">
+              <span class="text-sm font-medium text-sky-800">Del Norte (AIFA)</span>
             </div>
           </div>
         </div>
@@ -311,8 +397,8 @@ const closeLightbox = () => {
                 <img src="https://grupomundomaya.com/assets/img/icono hoteles.png" alt="" class="w-8 h-8" />
               </div>
               <div>
-                <h3 class="text-2xl font-bold text-gray-900">Hoteles Temáticos</h3>
-                <p class="text-gray-500">6 hoteles en zonas arqueológicas</p>
+                <h3 class="text-2xl font-bold text-gray-900">Hoteles Grupo Mundo Maya</h3>
+                <p class="text-gray-500">6 hoteles temáticos en zonas arqueológicas • 1,136 habitaciones</p>
               </div>
             </div>
             <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-500 text-white rounded-lg font-medium hover:bg-amber-600 transition-colors">
@@ -322,86 +408,150 @@ const closeLightbox = () => {
               </svg>
             </a>
           </div>
+
+          <!-- Servicios comunes -->
+          <div class="bg-amber-50 rounded-2xl p-6 mb-8">
+            <p class="text-sm font-medium text-amber-800 mb-3">Servicios disponibles en todos los hoteles:</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Alberca</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Spa</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Temazcal</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Restaurante</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Bar</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Gimnasio</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">WiFi</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">A/C</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Terraza</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Hotel Inclusivo</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Concierge</span>
+              <span class="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700">Estacionamiento</span>
+            </div>
+          </div>
+
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Palenque -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/palenque.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Palenque-1920w.jpg" alt="Hotel Palenque" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">160 hab.</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Palenque</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Palenque, Chiapas</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Palenque</h4>
+                <p class="text-gray-500 text-sm mb-3">A 3.5 km de la Zona Arqueológica • Chiapas</p>
+                <p class="text-gray-600 text-sm line-clamp-2">Ciudad maya prominente del siglo III. Clima cálido con cascadas y selva tropical.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 9 km</span>
+                  <span>Aeropuerto: 10 km</span>
+                </div>
               </div>
             </a>
+
             <!-- Edzná -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/edzna.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Edzna--1920w.jpg" alt="Hotel Edzná" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">160 hab.</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Edzná</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Edzná, Campeche</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Edzná</h4>
+                <p class="text-gray-500 text-sm mb-3">A 1 km de la Zona Arqueológica • Campeche</p>
+                <p class="text-gray-600 text-sm line-clamp-2">"Casa de los Itzáes". Acceso por Carreteras Federales 180 y 261.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 16.3 km</span>
+                  <span>Aeropuerto: 45 km</span>
+                </div>
               </div>
             </a>
+
             <!-- Nuevo Uxmal -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/nuevo_uxmal.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Nuevo+Uxmal-1920w.jpg" alt="Hotel Nuevo Uxmal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">160 hab.</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Nuevo Uxmal</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Uxmal, Yucatán</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Nuevo Uxmal</h4>
+                <p class="text-gray-500 text-sm mb-3">A 8.8 km de la Zona Arqueológica • Yucatán</p>
+                <p class="text-gray-600 text-sm line-clamp-2">Arquitectura sostenible con materiales regionales y eficiencia energética.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 28 km</span>
+                  <span>Aeropuerto: 75 km</span>
+                </div>
               </div>
             </a>
+
             <!-- Chichén Itzá -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/chichen-itza.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/H2+PORTAL+DE+KUKULKAN-1920w.png" alt="Hotel Chichén Itzá" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">160 hab.</div>
+                <div class="absolute top-4 left-4 px-3 py-1 bg-amber-500 rounded-full text-xs font-semibold text-white">UNESCO</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Chichén Itzá</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Chichén Itzá, Yucatán</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Chichén Itzá</h4>
+                <p class="text-gray-500 text-sm mb-3">A 2.4 km de la Zona Arqueológica • Yucatán</p>
+                <p class="text-gray-600 text-sm line-clamp-2">Patrimonio de la Humanidad UNESCO. Centro de atención turística con guías certificados.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 2.3 km</span>
+                  <span>Aeropuerto: 121 km</span>
+                </div>
               </div>
             </a>
+
             <!-- Tulum -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/tulum.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Tulum-1920w.jpg" alt="Hotel Tulum" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">352 hab.</div>
+                <div class="absolute top-4 left-4 px-3 py-1 bg-purple-500 rounded-full text-xs font-semibold text-white">Pueblo Mágico</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Tulum</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Tulum, Quintana Roo</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Tulum</h4>
+                <p class="text-gray-500 text-sm mb-3">A 2.6 km de la Zona Arqueológica • Quintana Roo</p>
+                <p class="text-gray-600 text-sm line-clamp-2">Ubicado en el Parque del Jaguar. 13.5 hectáreas entre relajación y aventura.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 3.8 km</span>
+                  <span>Aeropuerto: 23.5 km</span>
+                </div>
               </div>
             </a>
+
             <!-- Calakmul -->
-            <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-              <div class="aspect-[4/3]">
+            <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/calakmul.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+              <div class="relative aspect-[4/3] overflow-hidden">
                 <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Calakmul-1920w.jpg" alt="Hotel Calakmul" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-700">144 hab.</div>
+                <div class="absolute top-4 left-4 px-3 py-1 bg-amber-500 rounded-full text-xs font-semibold text-white">UNESCO</div>
               </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h4 class="text-xl font-bold text-white mb-1">Calakmul</h4>
-                <p class="text-white/80 text-sm">Zona Arqueológica de Calakmul, Campeche</p>
+              <div class="p-5">
+                <h4 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">Hotel Calakmul</h4>
+                <p class="text-gray-500 text-sm mb-3">A 10 km de la Zona Arqueológica • Campeche</p>
+                <p class="text-gray-600 text-sm line-clamp-2">Patrimonio Mundial UNESCO. Polígono Bonfil con 2.96 hectáreas de extensión.</p>
+                <div class="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+                  <span>Tren Maya: 51 km</span>
+                  <span>Aeropuerto: 224 km</span>
+                </div>
               </div>
             </a>
           </div>
+
           <!-- Mapa de hoteles -->
-          <div class="mt-10 bg-gray-100 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6">
-            <img src="https://irp.cdn-website.com/4d849d80/dms3rep/multi/Mapa-ubicaci-C3-B3n-de-hoteles-f3f4569f.png" alt="Mapa de ubicación de hoteles" class="w-full md:w-1/2 max-w-md rounded-xl" />
+          <div class="mt-10 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 flex flex-col md:flex-row items-center gap-6">
+            <img src="https://irp.cdn-website.com/4d849d80/dms3rep/multi/Mapa-ubicaci-C3-B3n-de-hoteles-f3f4569f.png" alt="Mapa de ubicación de hoteles" class="w-full md:w-1/2 max-w-md rounded-xl shadow-lg" />
             <div class="flex-1">
-              <h4 class="text-xl font-bold text-gray-900 mb-3">Ubicaciones Estratégicas</h4>
-              <p class="text-gray-600 mb-4">Nuestros 6 hoteles temáticos están ubicados en las zonas arqueológicas más importantes de la Península de Yucatán y Chiapas, ofreciendo una experiencia única de conexión con la cultura maya.</p>
-              <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="inline-flex items-center gap-2 text-amber-600 font-medium hover:text-amber-700 transition-colors">
-                Ver todos los hoteles
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </a>
+              <h4 class="text-xl font-bold text-gray-900 mb-3">Red de Hoteles en la Ruta Maya</h4>
+              <p class="text-gray-600 mb-4">Todos nuestros hoteles están conectados con el Tren Maya y ubicados cerca de las zonas arqueológicas más importantes de la Península de Yucatán, Campeche y Chiapas.</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="https://www.hotelesgrupomundomaya.com/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-lg font-medium hover:bg-amber-600 transition-colors text-sm">
+                  Reservar ahora
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
+                <a href="https://grupomundomaya.com/servicios-turisticos/hoteles/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 border border-amber-500 text-amber-600 rounded-lg font-medium hover:bg-amber-50 transition-colors text-sm">
+                  Más información
+                </a>
+              </div>
             </div>
           </div>
         </div>
