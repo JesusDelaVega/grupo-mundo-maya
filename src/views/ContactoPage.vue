@@ -29,9 +29,6 @@ const handleSubmit = () => {
     <!-- Hero -->
     <section class="bg-gradient-to-br from-sky-900 to-slate-900 py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center gap-4 mb-6">
-          <img src="https://grupomundomaya.com/assets/img/2024sedenagafsacomm.png" alt="SEDENA GAFSACOMM" class="h-12" />
-        </div>
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Contáctanos</h1>
         <p class="text-xl text-sky-100 max-w-3xl">Estamos aquí para ayudarte. Envíanos un mensaje y nuestro equipo te responderá a la brevedad.</p>
         <div class="mt-6">
