@@ -773,7 +773,7 @@ const closeLightbox = () => {
             <!-- Parque La Plancha -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/la_plancha.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
               <div class="h-44 relative overflow-hidden">
-                <img src="https://grupomundomaya.com/assets/img/museos-parques/plancha.png" alt="Parque La Plancha" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://www.gob.mx/cms/uploads/article/main_image/135584/BANNER_la_plancha_corto.jpg" alt="Parque La Plancha" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/30 to-transparent"></div>
                 <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-purple-700">20 ha</span>
                 <div class="absolute bottom-4 left-5">
@@ -805,7 +805,7 @@ const closeLightbox = () => {
             <!-- Parque del Jaguar -->
             <a href="https://grupomundomaya.com/servicios-turisticos/parques/jaguar.html" target="_blank" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
               <div class="h-44 relative overflow-hidden">
-                <img src="https://lirp.cdn-website.com/4d849d80/dms3rep/multi/opt/Tulum-1920w.jpg" alt="Parque del Jaguar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://www.gob.mx/cms/uploads/article/main_image/135582/BANNER_P_JAGUAR_2.jpg" alt="Parque del Jaguar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-gradient-to-t from-amber-900/90 via-amber-900/30 to-transparent"></div>
                 <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 rounded-full text-xs font-semibold text-amber-700">13.5 ha</span>
                 <div class="absolute bottom-4 left-5">
