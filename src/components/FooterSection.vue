@@ -114,6 +114,20 @@
       </div>
     </div>
 
+    <!-- Banners de Transparencia -->
+    <div class="bg-[#f5f0e8] py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-4">
+          <a href="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/banner-footer-transparencia-1.png" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <img src="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/banner-footer-transparencia-1.png" alt="Transparencia" class="w-full h-auto rounded-lg" />
+          </a>
+          <a href="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/banner-footer-transparencia-1.png" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition-opacity">
+            <img src="https://aifa.aero/Rm1wZXpOSWJaVkRBOXlOeDc0N0VEdz09/HTMLs/modulos/assets/images/banner-footer-transparencia-1.png" alt="Transparencia" class="w-full h-auto rounded-lg" />
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Greca SEGOB -->
     <div class="h-12 w-full overflow-hidden">
       <img
