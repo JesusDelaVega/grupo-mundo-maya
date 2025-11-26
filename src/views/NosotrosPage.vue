@@ -107,49 +107,86 @@
       </div>
     </section>
 
-    <!-- Historia -->
-    <section class="py-16 bg-white">
+    <!-- Timeline - Estilo Maya Animado -->
+    <section class="py-24 bg-gradient-to-br from-slate-50 to-amber-50/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Nuestra Historia</h2>
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="space-y-6 text-gray-600 leading-relaxed">
-            <p>El <strong class="text-sky-600">10 de febrero de 2022</strong>, el Presidente de México anunció su intención de crear una entidad estatal para administrar ciertos aeropuertos mexicanos.</p>
-            <p>El <strong class="text-sky-600">13 de abril de 2022</strong>, se publicó en el Diario Oficial de la Federación la resolución formal de constitución de Grupo Mundo Maya.</p>
-            <p>Previamente, el Ejército Mexicano había realizado construcciones y remodelaciones de estas infraestructuras, incluyendo el Aeropuerto Internacional Felipe Ángeles.</p>
-            <p>Hoy administramos una red de infraestructura estratégica que incluye aeropuertos, hoteles temáticos en zonas arqueológicas, parques y servicios de combustible.</p>
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <span class="inline-block px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-4 border border-amber-200">Nuestra Historia</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Impulsando el desarrollo de México</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Grupo Mundo Maya es una entidad paraestatal mexicana establecida el 13 de abril de 2022, cuya misión es administrar infraestructura estratégica nacional bajo dirección estatal.
+            </p>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              Contribuimos activamente al bienestar social y desarrollo económico del país a través de la gestión eficiente de aeropuertos, hoteles y servicios de combustible.
+            </p>
+            <router-link to="/servicios" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-semibold hover:from-amber-600 hover:to-amber-700 transition-all shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:-translate-y-0.5">
+              Explorar Servicios
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </router-link>
           </div>
-          <div class="bg-gradient-to-br from-sky-900 to-slate-900 rounded-3xl p-8 text-white">
-            <h3 class="text-xl font-bold mb-8 flex items-center">
-              <svg class="w-6 h-6 text-amber-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              Línea del Tiempo
-            </h3>
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-amber-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-amber-400 text-sm font-medium">10 Febrero 2022</div>
-                  <div class="font-semibold">Anuncio de Creación</div>
+
+          <div class="relative">
+            <!-- Card con estilo Maya -->
+            <div class="bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 rounded-3xl p-8 text-white border border-amber-500/20 shadow-2xl">
+              <!-- Decoración superior -->
+              <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 rounded-t-3xl"></div>
+
+              <h3 class="text-xl font-bold mb-8 flex items-center">
+                <div class="w-10 h-10 bg-amber-500/20 rounded-xl flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-sky-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-sky-400 text-sm font-medium">13 Abril 2022</div>
-                  <div class="font-semibold">Constitución Oficial</div>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-emerald-400 rounded-full mt-2 mr-4 flex-shrink-0"></div>
-                <div>
-                  <div class="text-emerald-400 text-sm font-medium">2022-2024</div>
-                  <div class="font-semibold">Expansión</div>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div class="w-3 h-3 bg-purple-400 rounded-full mt-2 mr-4 animate-pulse flex-shrink-0"></div>
-                <div>
-                  <div class="text-purple-400 text-sm font-medium">2025</div>
-                  <div class="font-semibold">Consolidación</div>
+                Línea del Tiempo
+              </h3>
+
+              <!-- Timeline con línea vertical -->
+              <div class="relative">
+                <!-- Línea vertical -->
+                <div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-gradient-to-b from-amber-400 via-sky-400 to-amber-400"></div>
+
+                <div class="space-y-8">
+                  <!-- Evento 1 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-amber-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-amber-400/30">
+                      <div class="text-amber-400 text-sm font-bold">10 Febrero 2022</div>
+                      <div class="font-semibold text-lg">Anuncio de Creación</div>
+                      <div class="text-sky-200 text-sm">El Presidente anuncia la creación de la entidad</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 2 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-sky-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-sky-400/30">
+                      <div class="text-sky-400 text-sm font-bold">13 Abril 2022</div>
+                      <div class="font-semibold text-lg">Constitución Oficial</div>
+                      <div class="text-sky-200 text-sm">Publicación en el Diario Oficial de la Federación</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 3 -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-emerald-400 rounded-full border-4 border-slate-900 group-hover:scale-125 transition-transform"></div>
+                    <div class="bg-white/5 rounded-xl p-4 flex-1 group-hover:bg-white/10 transition-colors border border-transparent group-hover:border-emerald-400/30">
+                      <div class="text-emerald-400 text-sm font-bold">2022-2024</div>
+                      <div class="font-semibold text-lg">Expansión y Consolidación</div>
+                      <div class="text-sky-200 text-sm">Integración de aeropuertos y servicios turísticos</div>
+                    </div>
+                  </div>
+
+                  <!-- Evento 4 - Actual -->
+                  <div class="group flex items-start relative pl-8">
+                    <div class="absolute left-0 w-4 h-4 bg-amber-400 rounded-full border-4 border-slate-900 animate-pulse"></div>
+                    <div class="bg-amber-500/10 rounded-xl p-4 flex-1 border border-amber-400/30">
+                      <div class="text-amber-400 text-sm font-bold flex items-center gap-2">
+                        2025
+                        <span class="px-2 py-0.5 bg-amber-400 text-slate-900 text-xs rounded-full font-bold">ACTUAL</span>
+                      </div>
+                      <div class="font-semibold text-lg">Crecimiento Continuo</div>
+                      <div class="text-sky-200 text-sm">12 aeropuertos, 6 hoteles, 11 puntos de combustible</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
